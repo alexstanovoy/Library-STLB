@@ -2,7 +2,7 @@
 
 ## About ##
 
-***Library::STLB*** (*Standard Template Library B*) -- the tiny library that contains implementations of powerful algorithms in **C++** language for different purposes: projects, as a small «*gear*» in big products, competitive programming solutions.  
+***Library::STLB*** (*Standard Template Library B*) - the tiny library that contains implementations of powerful algorithms in **C++** language for different purposes: projects, as a small «*gear*» in big products, competitive programming solutions.  
 Also, all algorithms and classes designed for intuitive use just like in **STD C++** library.  
 - *All sources use only `.hpp` files so library using don't require any changes in your compilation line arguments*.
 - *Docs* ***does not*** *contain detailed explanations, e.x. additional memory used, behavior in special cases... Sorry, I haven't got enough time for this*.
@@ -94,7 +94,7 @@ Trie-based structure. You should specify mapping value (as in `std::map`) and ra
 
 # Disjoint Set Union (dsu.hpp)
 
-Standart DSU.
+Standard DSU.
 
 | **operation**   | **complexity** | **explanation**                               |
 |-----------------|----------------|-----------------------------------------------|
@@ -160,11 +160,11 @@ This container provides methods for working with array as array of bits and byte
 
 ## Common algorithms (algorithm.hpp) ##
 
-- `radix_sort` (*radix sort*) -- very fast sort of unsigned integer container. Complexity: *O(NK)*, where **K** is `sizeof(key)`.
-- `radix_nth_element` (*radix selest*) -- very fast function that returns nth-element in container. Complexity: *O(NK)*, where **K** is `sizeof(key)`.
-- `prefix_function` (*prefix function*) -- implementation of prefix function algorithm. Complexity: *O(N)*.
-- `z_function` (*z-function*) -- implementation of z-function algorithm. Complexity: *O(N)*.
-- `manacher` -- implementation of manacher algorithm. Complexity: *O(N)*.
+- `radix_sort` (*radix sort*) - very fast sort of unsigned integer container. Complexity: *O(NK)*, where **K** is `sizeof(key)`.
+- `radix_nth_element` (*radix selest*) - very fast function that returns nth-element in container. Complexity: *O(NK)*, where **K** is `sizeof(key)`.
+- `prefix_function` (*prefix function*) - implementation of prefix function algorithm. Complexity: *O(N)*.
+- `z_function` (*z-function*) - implementation of z-function algorithm. Complexity: *O(N)*.
+- `manacher` - implementation of manacher algorithm. Complexity: *O(N)*.
 
 *Notes*:
 - `radix_sort` and `radix_nth_element` are both *stable*.
