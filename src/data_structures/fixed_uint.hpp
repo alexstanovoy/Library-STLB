@@ -16,8 +16,6 @@ namespace stlb
 
     private:
 
-        static constexpr const fixed_uint<width> _base = fixed_uint<width>(10000000000000000000ull);
-
         std::bitset<width> _data;
 
         size_t upper_one_() const noexcept {
@@ -35,6 +33,10 @@ namespace stlb
             return ret;
         }
 
+        static constexpr const fixed_uint<width> base_() noexcept {
+            return fixed_uint<width>(10000000000000000000ull);
+        }
+
     public:
 
         constexpr fixed_uint() noexcept = default;
@@ -45,7 +47,7 @@ namespace stlb
 
         constexpr fixed_uint(const std::string& str) noexcept {
             for (size_t i = 0, len = str.size(); i < len; i += 19) {
-                *this = *this * _base + fixed_uint<width>(std::stoull(str.substr(i, 19)));
+                *this = *this * base_() + fixed_uint<width>(std::stoull(str.substr(i, 19)));
             }
         }
 
@@ -298,8 +300,8 @@ namespace stlb
             std::string ret;
             ret.reserve((width + 2) / 3);
             fixed_uint<width> tmp(*this);
-            for (fixed_uint<width> next(tmp / _base);; next = tmp / _base) {
-                const std::string str(std::to_string(uint64_t(tmp - _base * next)));
+            for (fixed_uint<width> next(tmp / base_());; next = tmp / base_()) {
+                const std::string str(std::to_string(uint64_t(tmp - base_() * next)));
                 std::for_each(str.rbegin(), str.rend(), [&ret](const char x) {
                     ret += x;
                 });
