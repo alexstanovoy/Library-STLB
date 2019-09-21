@@ -88,7 +88,7 @@ Fast improved `std::bitset` with iterators and possibility to find next one, pre
 | reset                                 | *O(N/64)*                                        |
 | flip                                  | *O(N/64)*                                        |
 | next_ and prev_ (one, zero) functions | *O(N/64)*                                        |
-| to_string                             | *O(N²/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
+| to_string                             | *O(N)*                                           |
 
 
 ## Trie (trie.hpp) ##
