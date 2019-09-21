@@ -15,6 +15,7 @@ Also, all algorithms and classes designed for intuitive use just like in **STD C
 
 	+ [Fibonacci heap](#Fibonacci-heap-(fib_heap.hpp))
 	+ [Unsigned integer of fixed width](#Unsigned-integer-of-fixed-width-(fixed_uint.hpp))
+	+ [Bitset](#Bitset)
 	+ [Trie](#Trie-(trie.hpp))
 	+ [Disjoint Set Union](#Disjoint-Set-Union-(dsu.hpp))
 	+ [AVL tree set](#Set-(set.hpp))
@@ -45,17 +46,17 @@ Optimized fibonacci heap. *Note*: `push` operation returns `fib_heap<T>::pointer
 
 ## Unsigned integer of fixed width (fixed_uint.hpp) ##
 
-Unsigned integer type designed to work like `uintXXX_t`, where `XXX` is any number of bits. Has overloaded input/output operators. ***Requires GNU GCC compiler***. May be considered as small «big integer». 
+Unsigned integer type designed to work like `uintXXX_t`, where `XXX` is any number of bits. Has overloaded input/output operators. May be considered as small «big integer». 
 *I personally don't recommend to use this type for calculations larger than 512 bits*.  
-**N** *hereinafter is width of type*.
+**N** *hereinafter is width of type*. *Complexity written assuming that `sizeof(unsigned long) == 64`*
 
 | **operation**           | **complexity**                                   |
 |-------------------------|--------------------------------------------------|
 | Bitwise operators       | *O(N/64)*                                        |
-| Increment and decrement | *O(N/64)*                                           |
-| Comparision operators   | *O(N/64)*                                    |
-| Sum                     | *O(N/64)*                                       |
-| Subtraction             | *O(N/64)*                                       |
+| Increment and decrement | *O(N/64)*                                        |
+| Comparision operators   | *O(N/64)*                                        |
+| Sum                     | *O(N/64)*                                        |
+| Subtraction             | *O(N/64)*                                        |
 | Multiply                | *O(N²/64)*                                       |
 | Division                | *O(N²/64)*                                       |
 | to_string               | *O(N²/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
@@ -63,6 +64,32 @@ Unsigned integer type designed to work like `uintXXX_t`, where `XXX` is any numb
 | operator>>              | *O(N²/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
 
 *Note*: implementation of multiplication will be rewrited in the near future.
+
+## Bitset (bitset.hpp) ##
+
+Fast improved `std::bitset` with iterators and possibility to find next one, previous one, next zero, previous zero and first difference. *Complexity written assuming that `sizeof(unsigned long) == 64`*
+
+| **operation**                         | **complexity**                                   |
+|---------------------------------------|--------------------------------------------------|
+| operator[]                            | *O(1)*                                           |
+| test                                  | *O(1)*                                           |
+| size                                  | *O(1)*                                           |
+| set(`size_t`)                         | *O(1)*                                           |
+| reset(`size_t`)                       | *O(1)*                                           |
+| flip(`size_t`)                        | *O(1)*                                           |
+| operator==                            | *O(N/64)*                                        |
+| operator!=                            | *O(N/64)*                                        |
+| all                                   | *O(N/64)*                                        |
+| any                                   | *O(N/64)*                                        |
+| none                                  | *O(N/64)*                                        |
+| count                                 | *O(N/64)*                                        |
+| bitwise operators                     | *O(N/64)*                                        |
+| set                                   | *O(N/64)*                                        |
+| reset                                 | *O(N/64)*                                        |
+| flip                                  | *O(N/64)*                                        |
+| next_ and prev_ (one, zero) functions | *O(N/64)*                                        |
+| to_string                             | *O(N²/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
+
 
 ## Trie (trie.hpp) ##
 

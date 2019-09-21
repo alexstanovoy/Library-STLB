@@ -387,8 +387,9 @@ namespace stlb
             return *this;
         }
 
-        word_t& get_word(const size_t pos) const noexcept {
-            return _data[pos];
+        bitset<_width>& reset(const size_t ind) noexcept {
+            _data[ind / _bits] &= ~(static_cast<word_t>(1) << (ind % _bits));
+            return *this;
         }
 
         size_t next_one(size_t offset = 0) const noexcept {
