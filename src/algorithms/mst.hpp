@@ -1,12 +1,10 @@
-#ifndef __STLB_MST_ALGO
-#define __STLB_MST_ALGO 1
-
-#include "dsu.hpp"
-#include "graph.hpp"
-#include "algorithm.hpp"
-#include "fib_heap.hpp"
+#pragma once
 #include <queue>
 #include <vector>
+#include "dsu.hpp"
+#include "graph.hpp"
+#include "fib_heap.hpp"
+#include "algorithm.hpp"
 
 
 namespace stlb
@@ -186,5 +184,3 @@ namespace stlb
     }
 
 }
-
-#endif //  __STLB_MST_ALGO

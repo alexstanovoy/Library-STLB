@@ -1,6 +1,6 @@
 ![Library::STLB](images/logo.svg)
 
-## About ##
+## About [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Build status](https://travis-ci.org/AjReme/Library-STLB.svg?branch=master)##
 
 ***Library::STLB*** (*Standard Template Library B*) - the tiny library that contains implementations of powerful algorithms in **C++** language for different purposes: projects, as a small «*gear*» in big products, competitive programming solutions.  
 Also, all algorithms and classes designed for intuitive use just like in **STD C++** library.  
@@ -52,17 +52,17 @@ Unsigned integer type designed to work like `uintXXX_t`, where `XXX` is any numb
 | **operation**           | **complexity**                                   |
 |-------------------------|--------------------------------------------------|
 | Bitwise operators       | *O(N/64)*                                        |
-| Increment and decrement | *O(N)*                                           |
-| Comparision operators   | *O(NlogN/64)*                                    |
-| Sum                     | *O(N²/64)*                                       |
-| Subtraction             | *O(N²/64)*                                       |
-| Multiply                | *O(N³/64)*                                       |
-| Division                | *O(N³/64)*                                       |
-| to_string               | *O(N³/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
-| operator<<              | *O(N³/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
-| operator>>              | *O(N³/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
+| Increment and decrement | *O(N/64)*                                           |
+| Comparision operators   | *O(N/64)*                                    |
+| Sum                     | *O(N/64)*                                       |
+| Subtraction             | *O(N/64)*                                       |
+| Multiply                | *O(N²/64)*                                       |
+| Division                | *O(N²/64)*                                       |
+| to_string               | *O(N²/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
+| operator<<              | *O(N²/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
+| operator>>              | *O(N²/64 \* log<sub>10</sub>(2<sup>N</sup>)/19)* |
 
-*Note*: implementation of bitwise operators, increment and decrement could be faster if `std::bitset` was more flexible. *O(NlogN/64)* appeared to be better than *O(N)* in comparisions.
+*Note*: implementation of multiplication will be rewrited in the near future.
 
 ## Trie (trie.hpp) ##
 

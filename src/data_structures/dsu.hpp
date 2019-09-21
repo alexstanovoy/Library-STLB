@@ -1,6 +1,4 @@
-#ifndef __STLB_DSU
-#define __STLB_DSU 1
-
+#pragma once
 #include <vector>
 
 
@@ -68,5 +66,3 @@ namespace stlb
     };
 
 }
-
-#endif //  __STLB_DSU

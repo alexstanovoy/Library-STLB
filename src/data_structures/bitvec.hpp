@@ -1,7 +1,4 @@
-#ifndef __STLB_BITVEC
-#define __STLB_BITVEC
-
-#include <stdint.h>
+#pragma once
 #include <string>
 
 
@@ -122,5 +119,3 @@ namespace stlb {
     };
 
 }
-
-#endif //  __STLB_BITVEC

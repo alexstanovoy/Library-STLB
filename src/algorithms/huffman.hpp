@@ -1,9 +1,7 @@
-#ifndef __STLB_HUFFMAN
-#define __STLB_HUFFMAN 1
-
-#include "bitvec.h"
-#include <vector>
+#pragma once
 #include <queue>
+#include <vector>
+#include "bitvec.h"
 
 
 namespace stlb
@@ -169,5 +167,3 @@ namespace stlb
     };
 
 }
-
-#endif //  __STLB_HUFFMAN

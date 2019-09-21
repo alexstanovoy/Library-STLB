@@ -1,0 +1,27 @@
+language: cpp
+
+branches:
+  only:
+   - master
+
+os:
+  - osx
+  - linux
+
+compiler:
+  - gcc
+  - clang
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+install:
+  - cd tests
+  - cmake CMakeLists.txt
+  - make 
+
+script:
+  - make test
+

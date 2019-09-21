@@ -1,6 +1,4 @@
-#ifndef __STLB_FIB_HEAP
-#define __STLB_FIB_HEAP 1
-
+#pragma once
 #include <cmath>
 #include <vector>
 
@@ -18,21 +16,14 @@ namespace stlb
         {
 
             T key;
-            node_t* left;
-            node_t* right;
-            node_t* child;
-            node_t* parent;
-            size_t deg;
-            bool mark;
+            node_t* left = this;
+            node_t* right = this;
+            node_t* child = nullptr;
+            node_t* parent = nullptr;
+            size_t deg = 0;
+            bool mark = false;
 
-            node_t(const T& key) : key(key) {
-                left = this;
-                right = this;
-                child = nullptr;
-                parent = nullptr;
-                deg = 0;
-                mark = false;
-            }
+            constexpr node_t(const T& key) noexcept : key(key) {}
 
         };
 
@@ -161,7 +152,7 @@ namespace stlb
 
         };
 
-        fib_heap() = default;
+        constexpr fib_heap() noexcept = default;
 
         ~fib_heap() noexcept {
             clear();
@@ -224,5 +215,3 @@ namespace stlb
     };
 
 }
-
-#endif //  __STLB_FIB_HEAP

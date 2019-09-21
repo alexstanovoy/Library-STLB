@@ -1,6 +1,4 @@
-#ifndef __STLB_GRAPH
-#define __STLB_GRAPH 1
-
+#pragma once
 #include <vector>
 
 
@@ -126,5 +124,3 @@ namespace stlb
     };
 
 }
-
-#endif //  __STLB_GRAPH

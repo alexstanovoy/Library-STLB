@@ -1,5 +1,4 @@
-#ifndef __STLB_AVL_TREE
-#define __STLB_AVL_TREE 1
+#pragma once
 
 
 namespace stlb
@@ -281,5 +280,3 @@ namespace stlb
     };
 
 }
-
-#endif //  __STLB_AVL_TREE

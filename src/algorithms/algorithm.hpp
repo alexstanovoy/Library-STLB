@@ -1,7 +1,6 @@
-#ifndef __STLB_ALGO
-#define __STLB_ALGO 1
-
+#pragma once
 #include <vector>
+#include <climits>
 #include <iterator>
 #include <algorithm>
 
@@ -19,7 +18,7 @@ namespace stlb
         std::vector<size_t> arr_ptr(0x100);
         std::vector<iter_type> arr(std::distance(first, last));
 
-        for (sort_type bit_num = 0; bit_num < sort_type(8*sizeof(sort_type)); bit_num += 8) {
+        for (sort_type bit_num = 0; bit_num < sort_type(CHAR_BIT * sizeof(sort_type)); bit_num += CHAR_BIT) {
             n.assign(0x100, 0);
             std::for_each(first, last, [&get_key, &n, &BYTE, &bit_num](const iter_type& x){ 
                 n[(get_key(x) & (BYTE << bit_num)) >> bit_num]++;
@@ -55,7 +54,7 @@ namespace stlb
         sort_type legal_byte = 0;
         std::vector<size_t> n(0x100);
 
-        for (sort_type bit_num = sort_type(8*sizeof(sort_type)-8);; bit_num -= 8) {
+        for (sort_type bit_num = sort_type(CHAR_BIT * sizeof(sort_type) - CHAR_BIT);; bit_num -= CHAR_BIT) {
             sort_type cur_byte = (BYTE << bit_num);
             sort_type cur_st = (~sort_type(0)) - (sort_type(1) << (bit_num + 8)) + sort_type(1);
             n.assign(n.size(), 0);
@@ -135,9 +134,9 @@ namespace stlb
     std::vector<std::pair<size_t, size_t>> manacher(const RandomIt first, const RandomIt last) {
         size_t len = std::distance(first, last);
         std::vector<std::pair<size_t, size_t>> ret(len, { 0, 0 });
-        for (int64_t i = 0, l1 = 0, r1 = -1, l2 = 0, r2 = -1; i < len; ++i) {
-            int64_t k1 = (i > r1 ? 1 : std::min(int64_t(ret[l1 + r1 - i].first), r1 - i + 1));
-            int64_t k2 = (i > r2 ? 0 : std::min(int64_t(ret[l2 + r2 - i + 1].second), r2 - i + 1));
+        for (ssize_t i = 0, l1 = 0, r1 = -1, l2 = 0, r2 = -1; i < len; ++i) {
+            ssize_t k1 = (i > r1 ? 1 : std::min(ssize_t(ret[l1 + r1 - i].first), r1 - i + 1));
+            ssize_t k2 = (i > r2 ? 0 : std::min(ssize_t(ret[l2 + r2 - i + 1].second), r2 - i + 1));
             while (i >= k1 && i + k1 < len && *(first + i - k1) == *(first + i + k1)) {
                 ++k1;
             }
@@ -159,5 +158,3 @@ namespace stlb
     }
 
 }
-
-#endif //  __STLB_ALGO

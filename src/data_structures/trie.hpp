@@ -1,6 +1,4 @@
-#ifndef __STLB_TRIE
-#define __STLB_TRIE 1
-
+#pragma once
 #include <vector>
 #include <iterator>
 #include <algorithm>
@@ -195,5 +193,3 @@ namespace stlb
     };
 
 }
-
-#endif //  __STLB_TRIE

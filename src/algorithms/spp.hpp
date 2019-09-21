@@ -1,12 +1,10 @@
-#ifndef __STLB_SPP_ALGO
-#define __STLB_SPP_ALGO 1
-
-#include "graph.hpp"
-#include "fib_heap.hpp"
-#include "set.hpp"
+#pragma once
 #include <set>
 #include <queue>
 #include <vector>
+#include "set.hpp"
+#include "graph.hpp"
+#include "fib_heap.hpp"
 
 
 namespace stlb
@@ -213,5 +211,3 @@ namespace stlb
     }
 
 }
-
-#endif //  __STLB_SPP_ALGO
