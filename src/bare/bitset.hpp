@@ -1,6 +1,5 @@
 #pragma once
 #include <string>
-#include <cstddef>
 #include <algorithm>
 
 #include <cassert>
@@ -86,7 +85,11 @@ namespace stlb
                 return _ptr >= rhs._ptr;
             }
 
-            word_t& operator* () const noexcept {
+            word_t& operator* () noexcept {
+                return *_ptr;
+            }
+
+            word_t operator* () const noexcept {
                 return *_ptr;
             }
 
@@ -392,6 +395,10 @@ namespace stlb
             return *this;
         }
 
+        word_t& get_word(const size_t pos) const noexcept {
+            return _data[pos];
+        }
+
         size_t next_one(size_t offset = 0) const noexcept {
             size_t ind = offset / _bits;
             offset %= _bits;
@@ -466,16 +473,15 @@ namespace stlb
             return _width;
         }
 
-        unsigned long to_ulong() const noexcept {
-            return _data[0];
+        uint32_t to_uint32_t() const noexcept {
+            return static_cast<uint32_t>(_data[0]);
         }
 
-        unsigned long long to_ullong() const noexcept {
-            if (sizeof(word_t) == sizeof(unsigned long long)) {
-                return _data[0];
+        uint64_t to_uint64_t() const noexcept {
+            if (sizeof(word_t) == 32) {
+                return (static_cast<uint64_t>(_data[1]) << 32) + _data[0];
             }
-            #pragma warning(suppress: 63)
-            return (static_cast<unsigned long long>(_data[1]) << _bits) + _data[0]; 
+            return static_cast<uint64_t>(_data[0]); 
         }
 
         std::string to_string() const noexcept {

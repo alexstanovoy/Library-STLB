@@ -14,14 +14,19 @@ namespace stlb
         using sort_type = decltype(get_key(iter_type()));
 
         const sort_type BYTE = 0xFF;
+        const sort_type bytes_limit = sizeof(sort_type);
         std::vector<size_t> n(0x100);
         std::vector<size_t> arr_ptr(0x100);
         std::vector<iter_type> arr(std::distance(first, last));
 
-        for (sort_type bit_num = 0; bit_num < sort_type(CHAR_BIT * sizeof(sort_type)); bit_num += CHAR_BIT) {
-            n.assign(0x100, 0);
-            std::for_each(first, last, [&get_key, &n, &BYTE, &bit_num](const iter_type& x){ 
-                n[(get_key(x) & (BYTE << bit_num)) >> bit_num]++;
+        const auto get_byte = [&](const iter_type& x, const sort_type& bit_num) noexcept {
+            return (get_key(x) & (BYTE << bit_num)) >> bit_num;
+        };
+
+        for (sort_type bit_num = 0; bit_num < sort_type(CHAR_BIT * bytes_limit); bit_num += CHAR_BIT) {
+            std::fill(n.begin(), n.end(), 0);
+            std::for_each(first, last, [&](const iter_type& x) { 
+                n[get_byte(x, bit_num)]++;
             });
 
             arr_ptr[0] = 0;
@@ -29,8 +34,8 @@ namespace stlb
                 arr_ptr[i] = arr_ptr[i - 1] + n[i - 1];
             }
 
-            std::for_each(first, last, [&get_key, &arr, &arr_ptr, &BYTE, &bit_num](const iter_type& x){ 
-                arr[arr_ptr[(get_key(x) & (BYTE << bit_num)) >> bit_num]++] = x;
+            std::for_each(first, last, [&](const iter_type& x) { 
+                arr[arr_ptr[get_byte(x, bit_num)]++] = x;
             });
 
             std::copy(arr.begin(), arr.end(), first);
@@ -51,15 +56,16 @@ namespace stlb
         using sort_type = decltype(get_key(iter_type()));
 
         const sort_type BYTE = 0xFF;
+        const sort_type bytes_limit = sizeof(sort_type);
         sort_type legal_byte = 0;
         std::vector<size_t> n(0x100);
 
-        for (sort_type bit_num = sort_type(CHAR_BIT * sizeof(sort_type) - CHAR_BIT);; bit_num -= CHAR_BIT) {
+        for (sort_type bit_num = static_cast<sort_type>(CHAR_BIT * bytes_limit - CHAR_BIT);; bit_num -= CHAR_BIT) {
             sort_type cur_byte = (BYTE << bit_num);
-            sort_type cur_st = (~sort_type(0)) - (sort_type(1) << (bit_num + 8)) + sort_type(1);
-            n.assign(n.size(), 0);
+            sort_type cur_st = (~static_cast<sort_type>(0)) - (static_cast<sort_type>(1) << (bit_num + 8)) + static_cast<sort_type>(1);
+            std::fill(n.begin(), n.end(), 0);
 
-            std::for_each(first, last, [&n, &get_key, cur_st, cur_byte, legal_byte, bit_num](const iter_type& x){
+            std::for_each(first, last, [&](const iter_type& x){
                 sort_type tmp = get_key(x);
                 if (((tmp & cur_st) ^ legal_byte) == 0) {
                     n[(tmp & cur_byte) >> bit_num]++;

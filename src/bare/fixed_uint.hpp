@@ -50,8 +50,8 @@ namespace stlb
 
         ~fixed_uint() = default;
 
-        explicit operator unsigned long long () const noexcept {
-            return _data.to_ullong();
+        explicit operator uint64_t() const noexcept {
+            return _data.to_uint64_t();
         }
 
         fixed_uint<_width>& operator<<= (const size_t pos) noexcept {
@@ -249,7 +249,7 @@ namespace stlb
 
         std::string to_string() const noexcept {
             if (_width <= CHAR_BIT * sizeof(unsigned long long)) {
-                return std::to_string(_data.to_ullong());
+                return std::to_string(_data.to_uint64_t());
             }
             if (_data.none()) {
                 return "0";
@@ -257,7 +257,7 @@ namespace stlb
             std::string ret;
             ret.reserve((_width + 2) / 3);
             for (fixed_uint<_width> next(*this / base_()), tmp(*this);; next = tmp / base_()) {
-                const std::string str(std::to_string(static_cast<unsigned long long>(tmp - base_() * next)));
+                const std::string str(std::to_string(static_cast<uint64_t>(tmp - base_() * next)));
                 std::for_each(str.rbegin(), str.rend(), [&ret](const char x) {
                     ret += x;
                 });

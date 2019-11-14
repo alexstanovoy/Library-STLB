@@ -10,22 +10,22 @@
 namespace stlb
 {
 
-    template<class weight>
-    auto dijkstra_bin_heap(const undir_list_graph<weight>& graph, const size_t start) {
-        std::vector<std::pair<weight, size_t>> dist(
+    template<typename _weight>
+    auto dijkstra_bin_heap(const list_graph<_weight>& graph, const size_t start) {
+        std::vector<std::pair<_weight, size_t>> dist(
             graph.size(),
-            std::make_pair(weight(), -1)
+            std::make_pair(_weight(), -1)
         );
 
         std::vector<bool> used(graph.size(), false);
         std::vector<bool> inf(graph.size(), true);
         std::priority_queue<
-            std::pair<weight, size_t>,
-            std::vector<std::pair<weight, size_t>>,
-            std::greater<std::pair<weight, size_t>>
+            std::pair<_weight, size_t>,
+            std::vector<std::pair<_weight, size_t>>,
+            std::greater<std::pair<_weight, size_t>>
         > q;
         inf[start] = false;
-        q.push(std::make_pair(weight(), start));
+        q.push(std::make_pair(_weight(), start));
 
         while (!q.empty()) {
             size_t v = q.top().second; q.pop();
@@ -45,17 +45,17 @@ namespace stlb
     }
 
 
-    template<class weight>
-    auto dijkstra_rb_tree(const undir_list_graph<weight>& graph, const size_t start) {
-        std::vector<std::pair<weight, size_t>> dist(
+    template<typename _weight>
+    auto dijkstra_rb_tree(const list_graph<_weight>& graph, const size_t start) {
+        std::vector<std::pair<_weight, size_t>> dist(
             graph.size(),
-            std::make_pair(weight(), -1)
+            std::make_pair(_weight(), -1)
         );
 
         std::vector<bool> inf(graph.size(), true);
-        std::set<std::pair<weight, size_t>> q;
+        std::set<std::pair<_weight, size_t>> q;
         inf[start] = false;
-        q.insert(std::make_pair(weight(), start));
+        q.insert(std::make_pair(_weight(), start));
 
         while (!q.empty()) {
             size_t v = q.begin()->second; q.erase(q.begin());
@@ -77,17 +77,17 @@ namespace stlb
     }
 
 
-    template<class weight>
-    auto dijkstra_avl_tree(const undir_list_graph<weight>& graph, const size_t start) {
-        std::vector<std::pair<weight, size_t>> dist(
+    template<typename _weight>
+    auto dijkstra_avl_tree(const list_graph<_weight>& graph, const size_t start) {
+        std::vector<std::pair<_weight, size_t>> dist(
             graph.size(),
-            std::make_pair(weight(), -1)
+            std::make_pair(_weight(), -1)
         );
 
         std::vector<bool> inf(graph.size(), true);
-        stlb::set<std::pair<weight, size_t>> q;
+        stlb::set<std::pair<_weight, size_t>> q;
         inf[start] = false;
-        q.insert(std::make_pair(weight(), start));
+        q.insert(std::make_pair(_weight(), start));
 
         while (!q.empty()) {
             size_t v = q.find_by_order(0).second; q.erase(q.find_by_order(0));
@@ -109,20 +109,20 @@ namespace stlb
     }
 
 
-    template<class weight>
-    auto dijkstra_fib_heap(const undir_list_graph<weight>& graph, const size_t start) {
-        std::vector<std::pair<weight, size_t>> dist(
+    template<typename _weight>
+    auto dijkstra_fib_heap(const list_graph<_weight>& graph, const size_t start) {
+        std::vector<std::pair<_weight, size_t>> dist(
             graph.size(),
-            std::make_pair(weight(), -1)
+            std::make_pair(_weight(), -1)
         );
 
         std::vector<bool> inf(graph.size(), true);
         std::vector<
-            typename fib_heap<std::pair<weight, size_t>
+            typename fib_heap<std::pair<_weight, size_t>
         >::pointer> ptrs(graph.size());
-        fib_heap<std::pair<weight, size_t>> q;
+        fib_heap<std::pair<_weight, size_t>> q;
         inf[start] = false;
-        ptrs[start] = q.push(std::make_pair(weight(), start));
+        ptrs[start] = q.push(std::make_pair(_weight(), start));
 
         while (!q.empty()) {
             size_t v = q.top().second; q.pop();
@@ -143,9 +143,9 @@ namespace stlb
     }
 
 
-    template<class weight>
-    auto ford_bellman(const undir_list_graph<weight>& graph, const size_t start) {
-        std::vector<edge_t<weight>> edges;
+    template<typename _weight>
+    auto ford_bellman(const list_graph<_weight>& graph, const size_t start) {
+        std::vector<edge_t<_weight>> edges;
         for (size_t i = 0; i < graph.size(); i++) {
             for (const auto& j : graph.get_next_vertices(i)) {
                 edges.push_back({ i, j.first, j.second });
@@ -153,9 +153,9 @@ namespace stlb
         }
 
         std::vector<bool> inf(graph.size(), true);
-        std::vector<std::pair<weight, size_t>> dist(
+        std::vector<std::pair<_weight, size_t>> dist(
             graph.size(),
-            std::make_pair(weight(), -1)
+            std::make_pair(_weight(), -1)
         );
         inf[start] = false;
 
@@ -179,13 +179,13 @@ namespace stlb
     }
 
 
-    template<class weight>
-    auto SPFA(const undir_list_graph<weight>& graph, const size_t start) {
+    template<typename _weight>
+    auto SPFA(const list_graph<_weight>& graph, const size_t start) {
         std::vector<bool> in_queue(graph.size(), false);
         std::vector<bool> inf(graph.size(), true);
-        std::vector<std::pair<weight, size_t>> dist(
+        std::vector<std::pair<_weight, size_t>> dist(
             graph.size(),
-            std::make_pair(weight(), -1)
+            std::make_pair(_weight(), -1)
         );
         std::queue<size_t> q;
 

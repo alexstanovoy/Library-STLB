@@ -4,6 +4,12 @@ branches:
   only:
    - master
 
+addons:
+  apt:
+    packages:
+      - lcov
+      - doxygen
+
 os:
   - osx
   - linux
@@ -18,10 +24,16 @@ notifications:
     on_failure: always
 
 install:
-  - cd tests
-  - cmake CMakeLists.txt
-  - make 
+  - mkdir build
+  - cd build
 
 script:
-  - make test
+  - cmake ../CMakeLists.txt -B ./
+  - make
+  - ctest
 
+after_success:
+  - lcov --directory . --capture --output-file coverage.info
+  - lcov --remove coverage.info --output-file coverage.info
+  - lcov --list coverage.info
+  - bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"

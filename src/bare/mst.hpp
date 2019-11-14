@@ -11,7 +11,7 @@ namespace stlb
 {
 
     template<class weight>
-    auto kruskal_comp(const undir_list_graph<weight>& graph) {
+    auto kruskal_comp(const list_graph<weight>& graph) {
         std::vector<edge_t<weight>> edges, ret;
         edges.reserve(graph.edges_count());
         ret.reserve(graph.size() - 1);
@@ -35,7 +35,7 @@ namespace stlb
 
 
     template<class weight>
-    auto kruskal_radix(const undir_list_graph<weight>& graph) {
+    auto kruskal_radix(const list_graph<weight>& graph) {
         std::vector<edge_t<weight>> edges, ret;
         edges.reserve(graph.edges_count());
         ret.reserve(graph.size() - 1);
@@ -59,7 +59,7 @@ namespace stlb
 
 
     template<class weight>
-    auto boruvka(const undir_list_graph<weight>& graph) {
+    auto boruvka(const list_graph<weight>& graph) {
         std::vector<edge_t<weight>> edges, ret;
         dsu comp(graph.size());
         edges.reserve(graph.edges_count());
@@ -110,7 +110,7 @@ namespace stlb
 
 
     template<class weight>
-    auto prim_bin_heap(const undir_list_graph<weight>& graph) {
+    auto prim_bin_heap(const list_graph<weight>& graph) {
         std::vector<edge_t<weight>> ret;
         ret.reserve(graph.size() - 1);
 
@@ -147,7 +147,7 @@ namespace stlb
 
 
     template<class weight>
-    auto prim_fib_heap(const undir_list_graph<weight>& graph) {
+    auto prim_fib_heap(const list_graph<weight>& graph) {
         std::vector<edge_t<weight>> ret;
         ret.reserve(graph.size() - 1);
 
