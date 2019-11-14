@@ -23,12 +23,8 @@ notifications:
     on_success: never
     on_failure: always
 
-install:
-  - mkdir build
-  - cd build
-
 script:
-  - cmake ../CMakeLists.txt -B ./
+  - cmake CMakeLists.txt
   - make
   - ctest
 

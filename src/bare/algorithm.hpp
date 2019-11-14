@@ -140,7 +140,7 @@ namespace stlb
     std::vector<std::pair<size_t, size_t>> manacher(const RandomIt first, const RandomIt last) {
         size_t len = std::distance(first, last);
         std::vector<std::pair<size_t, size_t>> ret(len, { 0, 0 });
-        for (ssize_t i = 0, l1 = 0, r1 = -1, l2 = 0, r2 = -1; i < len; ++i) {
+        for (ssize_t i = 0, l1 = 0, r1 = -1, l2 = 0, r2 = -1; i < static_cast<ssize_t>(len); ++i) {
             ssize_t k1 = (i > r1 ? 1 : std::min(ssize_t(ret[l1 + r1 - i].first), r1 - i + 1));
             ssize_t k2 = (i > r2 ? 0 : std::min(ssize_t(ret[l2 + r2 - i + 1].second), r2 - i + 1));
             while (i >= k1 && i + k1 < len && *(first + i - k1) == *(first + i + k1)) {

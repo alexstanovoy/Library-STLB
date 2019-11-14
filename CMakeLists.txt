@@ -3,7 +3,7 @@ set(PROJECT_REVISION "0.0.1")
 project(stlb_global_cmake VERSION ${PROJECT_REVISION})
 
 if(CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
-    message(FATAL_ERROR "Do not build in-source. Please remove CMakeCache.txt and the CMakeFiles/ directory. Then build out-of-source.")
+    message(WARNING "Do not build in-source. Please remove CMakeCache.txt and the CMakeFiles/ directory. Then build out-of-source.")
 endif()
 
 include("cmake/build_settings.cmake")
