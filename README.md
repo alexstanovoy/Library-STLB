@@ -5,7 +5,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Build Status](https://travis-ci.org/AjReme/Library-STLB.svg?branch=master)](https://travis-ci.org/AjReme/Library-STLB)
 [![Codecov status](https://codecov.io/github/AjReme/Library-STLB/coverage.svg?branch=master)](https://codecov.io/gh/Ajreme/Library-STLB)
-[![Documentation](https://img.shields.io/badge/Documentation-latest-blue.svg)](http://www.library-stlb.io)
+[![Documentation](https://img.shields.io/badge/Documentation-latest-blue.svg)](https://ajreme.github.io/Library-STLB/)
 
 ***Library::STLB*** (*Standard Template Library B*) - the tiny library that contains implementations of powerful algorithms in **C++** language for different purposes: projects, as a small «*gear*» in big products, competitive programming solutions.
 Also, all algorithms and classes designed for intuitive use just like in **STD C++** library.
@@ -19,7 +19,7 @@ Features:
 
 ## Documentation ##
 
-Documentation of the project is available on [GitHub Pages](http://www.library-stlb.io).
+Documentation of the project is available on [GitHub Pages](https://ajreme.github.io/Library-STLB/).
 ***Note that not all sources are currently documented. If you can help - you're welcome!***
 
 ## Testing & Creating documentation ##
