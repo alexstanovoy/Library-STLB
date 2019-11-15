@@ -11,7 +11,6 @@ addons:
       - doxygen
 
 os:
-  - osx
   - linux
 
 compiler:

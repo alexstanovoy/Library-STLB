@@ -14,7 +14,7 @@ int main() {
     std::vector<uint64_t> vec2 = vec1;
 
     std::sort(vec1.begin(), vec1.end());
-    stlb::radix_sort(vec2.begin(), vec2.end());
+    stlb::algorithm::radix_sort(vec2.begin(), vec2.end());
 
     exit(vec1 != vec2);
 }
