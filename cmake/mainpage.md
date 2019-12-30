@@ -1,6 +1,6 @@
 ## About ##
 
-***Library::STLB*** (*Standard Template Library B*) - the tiny library that contains implementations of powerful algorithms in **C++** language for different purposes: projects, as a small «*gear*» in big products, competitive programming solutions.
+***Library::STLB*** (*Standard Template Library B*) - the tiny library that contains implementations of powerful algorithms in **C++** language for different purposes: projects, as a small «gear» in big products, competitive programming solutions.
 Also, all algorithms and classes designed for intuitive use just like in **STD C++** library.
 
 Features:

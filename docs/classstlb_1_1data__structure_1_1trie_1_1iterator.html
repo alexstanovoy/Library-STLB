@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>⠀: trie&lt; min_key, max_key, value &gt;::iterator Class Reference</title>
+<title>⠀: trie&lt; _min_key, _max_key, _value &gt;::iterator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,10 +95,12 @@ $(document).ready(function(){initNavTree('classstlb_1_1data__structure_1_1trie_1
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classstlb_1_1data__structure_1_1trie_1_1iterator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">trie&lt; min_key, max_key, value &gt;::iterator Class Reference</div>  </div>
+<div class="title">trie&lt; _min_key, _max_key, _value &gt;::iterator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -106,62 +108,47 @@ $(document).ready(function(){initNavTree('classstlb_1_1data__structure_1_1trie_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a51c63e6bd2647c11a93a7c73a283d2c9"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a51c63e6bd2647c11a93a7c73a283d2c9">iterator</a> () noexcept</td></tr>
-<tr class="separator:a51c63e6bd2647c11a93a7c73a283d2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853f4d36195603141feef1bba2328e29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a853f4d36195603141feef1bba2328e29">iterator</a> (<a class="el" href="structstlb_1_1data__structure_1_1trie_1_1node__t.html">node_t</a> *const ptr) noexcept</td></tr>
-<tr class="separator:a853f4d36195603141feef1bba2328e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f0517d3b4427d7679488f20906c6b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a19f0517d3b4427d7679488f20906c6b3">operator=</a> (const <a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a19f0517d3b4427d7679488f20906c6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af305fa70a5765b9d92c4c1e61b0d72d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#af305fa70a5765b9d92c4c1e61b0d72d3">iterator</a> (const <a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> &amp;other) noexcept=default</td></tr>
+<tr class="separator:af305fa70a5765b9d92c4c1e61b0d72d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33b28d4e746a1f2e450df129eb7a869"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#ae33b28d4e746a1f2e450df129eb7a869">operator=</a> (const <a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> &amp;other) noexcept=default</td></tr>
+<tr class="separator:ae33b28d4e746a1f2e450df129eb7a869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e779b99a5a5a356fd5d3a95b403b9d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a6e779b99a5a5a356fd5d3a95b403b9d9">operator==</a> (const <a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> &amp;other) const noexcept</td></tr>
 <tr class="separator:a6e779b99a5a5a356fd5d3a95b403b9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec838888ed703a89195d0be1d852c73d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#aec838888ed703a89195d0be1d852c73d">operator[]</a> (const size_t &amp;next) const noexcept</td></tr>
-<tr class="separator:aec838888ed703a89195d0be1d852c73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c6176accf7ebad9aa52b8be087d54df"><td class="memItemLeft" align="right" valign="top">value &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a6c6176accf7ebad9aa52b8be087d54df">operator*</a> () const noexcept</td></tr>
-<tr class="separator:a6c6176accf7ebad9aa52b8be087d54df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5a8ad1e9592c01107c380dfa982ea6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a4c5a8ad1e9592c01107c380dfa982ea6">operator[]</a> (const size_t <a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a430a0e9f8a1db71ea031e183fd4e4b0b">next</a>) const noexcept</td></tr>
+<tr class="separator:a4c5a8ad1e9592c01107c380dfa982ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4605e564dfa1ab2c3f418fd4e3391f94"><td class="memItemLeft" align="right" valign="top">_value &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a4605e564dfa1ab2c3f418fd4e3391f94">operator*</a> () const noexcept</td></tr>
+<tr class="separator:a4605e564dfa1ab2c3f418fd4e3391f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430a0e9f8a1db71ea031e183fd4e4b0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a430a0e9f8a1db71ea031e183fd4e4b0b">next</a> (const size_t next) noexcept</td></tr>
+<tr class="separator:a430a0e9f8a1db71ea031e183fd4e4b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5453265515e1ae2d98934841c89f73b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#af5453265515e1ae2d98934841c89f73b">is_leaf</a> () const noexcept</td></tr>
 <tr class="separator:af5453265515e1ae2d98934841c89f73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c7a2ffe7f28276532a227bb8db4b5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a82c7a2ffe7f28276532a227bb8db4b5c">is_end</a> () const noexcept</td></tr>
+<tr class="separator:a82c7a2ffe7f28276532a227bb8db4b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a853f4d36195603141feef1bba2328e29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a853f4d36195603141feef1bba2328e29">iterator</a> (<a class="el" href="structstlb_1_1data__structure_1_1trie_1_1node__t.html">node_t</a> *const ptr) noexcept</td></tr>
+<tr class="separator:a853f4d36195603141feef1bba2328e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1ed655523c679e1f96694e80de2b2a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstlb_1_1data__structure_1_1trie_1_1node__t.html">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#a1ed655523c679e1f96694e80de2b2a10">_ptr</a></td></tr>
 <tr class="separator:a1ed655523c679e1f96694e80de2b2a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:acd7560f7f96dec9163997cf6ef6e7404"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html#acd7560f7f96dec9163997cf6ef6e7404">trie</a></td></tr>
+<tr class="separator:acd7560f7f96dec9163997cf6ef6e7404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;size_t min_key, size_t max_key, class value&gt;<br />
-class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
+<div class="textblock"><h3>template&lt;const size_t _min_key, const size_t _max_key, class _value&gt;<br />
+class stlb::data_structure::trie&lt; _min_key, _max_key, _value &gt;::iterator</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00057">57</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00117">117</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a51c63e6bd2647c11a93a7c73a283d2c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51c63e6bd2647c11a93a7c73a283d2c9">&#9670;&nbsp;</a></span>iterator() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00066">66</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
-
-</div>
-</div>
 <a id="a853f4d36195603141feef1bba2328e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a853f4d36195603141feef1bba2328e29">&#9670;&nbsp;</a></span>iterator() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a853f4d36195603141feef1bba2328e29">&#9670;&nbsp;</a></span>iterator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,16 +166,69 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
       </table>
   </td>
   <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00126">126</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af305fa70a5765b9d92c4c1e61b0d72d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af305fa70a5765b9d92c4c1e61b0d72d3">&#9670;&nbsp;</a></span>iterator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a82c7a2ffe7f28276532a227bb8db4b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c7a2ffe7f28276532a227bb8db4b5c">&#9670;&nbsp;</a></span>is_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00068">68</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00155">155</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af5453265515e1ae2d98934841c89f73b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5453265515e1ae2d98934841c89f73b">&#9670;&nbsp;</a></span>is_leaf()</h2>
 
@@ -212,12 +252,12 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00087">87</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00151">151</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a6c6176accf7ebad9aa52b8be087d54df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c6176accf7ebad9aa52b8be087d54df">&#9670;&nbsp;</a></span>operator*()</h2>
+<a id="a430a0e9f8a1db71ea031e183fd4e4b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430a0e9f8a1db71ea031e183fd4e4b0b">&#9670;&nbsp;</a></span>next()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +266,35 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">value&amp; operator* </td>
+          <td class="memname"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a>&amp; next </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>next</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00146">146</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4605e564dfa1ab2c3f418fd4e3391f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4605e564dfa1ab2c3f418fd4e3391f94">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_value&amp; operator* </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -239,12 +307,12 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00083">83</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00142">142</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a19f0517d3b4427d7679488f20906c6b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19f0517d3b4427d7679488f20906c6b3">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="ae33b28d4e746a1f2e450df129eb7a869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33b28d4e746a1f2e450df129eb7a869">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,12 +330,10 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00070">70</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
 
 </div>
 </div>
@@ -295,12 +361,12 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00075">75</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00134">134</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
 
 </div>
 </div>
-<a id="aec838888ed703a89195d0be1d852c73d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec838888ed703a89195d0be1d852c73d">&#9670;&nbsp;</a></span>operator[]()</h2>
+<a id="a4c5a8ad1e9592c01107c380dfa982ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5a8ad1e9592c01107c380dfa982ea6">&#9670;&nbsp;</a></span>operator[]()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,9 +375,9 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a>&amp; operator[] </td>
+          <td class="memname"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a> operator[] </td>
           <td>(</td>
-          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>next</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -323,7 +389,32 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00079">79</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00138">138</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="acd7560f7f96dec9163997cf6ef6e7404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd7560f7f96dec9163997cf6ef6e7404">&#9670;&nbsp;</a></span>trie</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classstlb_1_1data__structure_1_1trie.html">trie</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00122">122</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
 
 </div>
 </div>
@@ -348,7 +439,7 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00062">62</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trie_8hpp_source.html#l00124">124</a> of file <a class="el" href="trie_8hpp_source.html">trie.hpp</a>.</p>
 
 </div>
 </div>
@@ -361,7 +452,7 @@ class stlb::data_structure::trie&lt; min_key, max_key, value &gt;::iterator</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestlb.html">stlb</a></li><li class="navelem"><a class="el" href="namespacestlb_1_1data__structure.html">data_structure</a></li><li class="navelem"><a class="el" href="classstlb_1_1data__structure_1_1trie.html">trie</a></li><li class="navelem"><a class="el" href="classstlb_1_1data__structure_1_1trie_1_1iterator.html">iterator</a></li>
-    <li class="footer">Generated on Fri Nov 15 2019 20:14:42 for ⠀ by
+    <li class="footer">Generated on Tue Dec 31 2019 01:25:51 for ⠀ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

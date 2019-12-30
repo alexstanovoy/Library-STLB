@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ray',['ray',['../structstlb_1_1geometry_1_1ray.html',1,'stlb::geometry']]],
-  ['reference',['reference',['../classstlb_1_1data__structure_1_1bitset_1_1reference.html',1,'stlb::data_structure::bitset']]]
+  ['query',['query',['../structstlb_1_1geometry_1_1____are__inside__polygon_1_1query.html',1,'stlb::geometry::__are_inside_polygon']]]
 ];

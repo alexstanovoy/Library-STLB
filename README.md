@@ -15,12 +15,16 @@ Features:
 - *All sources use only `.hpp` files so library doesn't require any changes in your compilation line arguments*.
 - *Library was tested manually, generating random tests, in different competitive programming tasks and even in contests*.
 - *Some additional functionality for existing code, new algorithms and data structures will be added later*.
-- *Exceptions **is not** used by the library. Therefore if you see any function without `noexcept` - open an issue*.
+- *Exceptions **are not** used by the library. Therefore if you see any function without `noexcept` - open an issue*.
 
 ## Documentation ##
 
-Documentation of the project is available on [GitHub Pages](https://ajreme.github.io/Library-STLB/).
+Documentation of the project is available on [GitHub Pages](https://ajreme.github.io/Library-STLB/).  
 ***Note that not all sources are currently documented. If you can help - you're welcome!***
+
+## Changelog ##
+
+Changelog is available [here](https://github.com/AjReme/Library-STLB/blob/master/CHANGELOG.md).
 
 ## Testing & Creating documentation ##
 

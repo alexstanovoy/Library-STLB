@@ -19,7 +19,6 @@ var geom_8hpp =
     [ "lex_cmp_", "structstlb_1_1geometry_1_1____are__inside__polygon_1_1lex__cmp__.html", "structstlb_1_1geometry_1_1____are__inside__polygon_1_1lex__cmp__" ],
     [ "cmp_sort_", "structstlb_1_1geometry_1_1____are__inside__polygon_1_1cmp__sort__.html", "structstlb_1_1geometry_1_1____are__inside__polygon_1_1cmp__sort__" ],
     [ "__STLB_EPS", "geom_8hpp.html#aa00b8b03646a10581d1c2ef5639ad435", null ],
-    [ "_USE_MATH_DEFINES", "geom_8hpp.html#a525335710b53cb064ca56b936120431e", null ],
     [ "location", "geom_8hpp.html#a1044ebbaaa01a4571f43ceba6bbf282f", [
       [ "inside", "geom_8hpp.html#a1044ebbaaa01a4571f43ceba6bbf282fa056ab366478100896cc1b7e5c2bb6514", null ],
       [ "border", "geom_8hpp.html#a1044ebbaaa01a4571f43ceba6bbf282fab82b852779d693b5a550428266c22a8b", null ],

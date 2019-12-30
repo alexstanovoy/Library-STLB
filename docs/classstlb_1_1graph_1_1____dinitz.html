@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('classstlb_1_1graph_1_1____dinitz.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classstlb_1_1graph_1_1____dinitz-members.html">List of all members</a>  </div>
@@ -109,19 +110,24 @@ $(document).ready(function(){initNavTree('classstlb_1_1graph_1_1____dinitz.html'
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa82d6dbbf7aa91cec545a4dc49274d71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#aa82d6dbbf7aa91cec545a4dc49274d71">__dinitz</a> ()=delete</td></tr>
 <tr class="separator:aa82d6dbbf7aa91cec545a4dc49274d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db850833748e5008c678be77d8e3470"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a6db850833748e5008c678be77d8e3470">__dinitz</a> (<a class="el" href="classstlb_1_1graph_1_1network.html">network</a>&lt; _weight &gt; &amp;net, const size_t source, const size_t destination) noexcept</td></tr>
-<tr class="separator:a6db850833748e5008c678be77d8e3470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ced741f418bb0a4856869c4ee75d7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a50ced741f418bb0a4856869c4ee75d7d">__dinitz</a> (<a class="el" href="classstlb_1_1graph_1_1network.html">network</a>&lt; _weight &gt; &amp;net, const size_t &amp;source, const size_t &amp;destination) noexcept</td></tr>
+<tr class="separator:a50ced741f418bb0a4856869c4ee75d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e3af22def98bd58cf7846472b0aac8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a4e3af22def98bd58cf7846472b0aac8f">~__dinitz</a> () noexcept=default</td></tr>
 <tr class="separator:a4e3af22def98bd58cf7846472b0aac8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3627aa1ba9ebb0df81c7fd0cb6cd2247"><td class="memItemLeft" align="right" valign="top">_weight&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a3627aa1ba9ebb0df81c7fd0cb6cd2247">flow</a> () noexcept</td></tr>
 <tr class="separator:a3627aa1ba9ebb0df81c7fd0cb6cd2247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a431f6cf16999b466171e114635c84923"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a431f6cf16999b466171e114635c84923">iter_t</a> = typename <a class="el" href="classstlb_1_1graph_1_1network.html">network</a>&lt; _weight &gt;::iterator</td></tr>
+<tr class="separator:a431f6cf16999b466171e114635c84923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a0263130afcb3de471eb0e2e4618adbb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a0263130afcb3de471eb0e2e4618adbb5">construct_layers_</a> () noexcept</td></tr>
 <tr class="separator:a0263130afcb3de471eb0e2e4618adbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaab75a7349ac9b92a3bc7af746dd2a17"><td class="memItemLeft" align="right" valign="top">_weight&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#aaab75a7349ac9b92a3bc7af746dd2a17">push_</a> (const size_t v, const _weight <a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a3627aa1ba9ebb0df81c7fd0cb6cd2247">flow</a>=std::numeric_limits&lt; _weight &gt;::max()) noexcept</td></tr>
-<tr class="separator:aaab75a7349ac9b92a3bc7af746dd2a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9103b63e0f266dda6dcd5d29f0b1741"><td class="memItemLeft" align="right" valign="top">_weight&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#ac9103b63e0f266dda6dcd5d29f0b1741">push_</a> (const size_t &amp;v, const _weight &amp;<a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a3627aa1ba9ebb0df81c7fd0cb6cd2247">flow</a>=std::numeric_limits&lt; _weight &gt;::max()) noexcept</td></tr>
+<tr class="separator:ac9103b63e0f266dda6dcd5d29f0b1741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -133,8 +139,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aae0a055465452d43ee0c28e5b278446a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4f4595781ca1a0cba657f06709860a2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#ad4f4595781ca1a0cba657f06709860a2">_layer</a></td></tr>
 <tr class="separator:ad4f4595781ca1a0cba657f06709860a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada6d682360c66bf770982ce336b2e5bc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; typename <a class="el" href="classstlb_1_1graph_1_1network.html">network</a>&lt; _weight &gt;::iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#ada6d682360c66bf770982ce336b2e5bc">_ptr</a></td></tr>
-<tr class="separator:ada6d682360c66bf770982ce336b2e5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8975f647fa705244847f2478e7209d26"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a431f6cf16999b466171e114635c84923">iter_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a8975f647fa705244847f2478e7209d26">_ptr</a></td></tr>
+<tr class="separator:a8975f647fa705244847f2478e7209d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename _weight&gt;<br />
@@ -142,7 +148,32 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 
 
 <p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00017">17</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a431f6cf16999b466171e114635c84923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431f6cf16999b466171e114635c84923">&#9670;&nbsp;</a></span>iter_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a431f6cf16999b466171e114635c84923">iter_t</a> =  typename <a class="el" href="classstlb_1_1graph_1_1network.html">network</a>&lt;_weight&gt;::iterator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00022">22</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa82d6dbbf7aa91cec545a4dc49274d71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa82d6dbbf7aa91cec545a4dc49274d71">&#9670;&nbsp;</a></span>__dinitz() <span class="overload">[1/2]</span></h2>
 
@@ -168,8 +199,8 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 
 </div>
 </div>
-<a id="a6db850833748e5008c678be77d8e3470"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6db850833748e5008c678be77d8e3470">&#9670;&nbsp;</a></span>__dinitz() <span class="overload">[2/2]</span></h2>
+<a id="a50ced741f418bb0a4856869c4ee75d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ced741f418bb0a4856869c4ee75d7d">&#9670;&nbsp;</a></span>__dinitz() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,13 +217,13 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
           <td class="paramname"><em>destination</em>&#160;</td>
         </tr>
         <tr>
@@ -208,7 +239,7 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00070">70</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00072">72</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
 
 </div>
 </div>
@@ -261,7 +292,7 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00028">28</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00030">30</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
 
 </div>
 </div>
@@ -288,12 +319,12 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00080">80</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00082">82</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
 
 </div>
 </div>
-<a id="aaab75a7349ac9b92a3bc7af746dd2a17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaab75a7349ac9b92a3bc7af746dd2a17">&#9670;&nbsp;</a></span>push_()</h2>
+<a id="ac9103b63e0f266dda6dcd5d29f0b1741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9103b63e0f266dda6dcd5d29f0b1741">&#9670;&nbsp;</a></span>push_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,13 +335,13 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
         <tr>
           <td class="memname">_weight push_ </td>
           <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
           <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const _weight&#160;</td>
+          <td class="paramtype">const _weight &amp;&#160;</td>
           <td class="paramname"><em>flow</em> = <code>std::numeric_limits&lt;_weight&gt;::max()</code>&#160;</td>
         </tr>
         <tr>
@@ -326,7 +357,7 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00045">45</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00047">47</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
 
 </div>
 </div>
@@ -351,7 +382,7 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00023">23</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00025">25</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
 
 </div>
 </div>
@@ -375,7 +406,7 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00025">25</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00027">27</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
 
 </div>
 </div>
@@ -399,12 +430,12 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00024">24</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00026">26</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ada6d682360c66bf770982ce336b2e5bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada6d682360c66bf770982ce336b2e5bc">&#9670;&nbsp;</a></span>_ptr</h2>
+<a id="a8975f647fa705244847f2478e7209d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8975f647fa705244847f2478e7209d26">&#9670;&nbsp;</a></span>_ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +444,7 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;typename <a class="el" href="classstlb_1_1graph_1_1network.html">network</a>&lt;_weight&gt;::iterator&gt; _ptr</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classstlb_1_1graph_1_1____dinitz.html#a431f6cf16999b466171e114635c84923">iter_t</a>&gt; _ptr</td>
         </tr>
       </table>
   </td>
@@ -423,7 +454,7 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00026">26</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00028">28</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
 
 </div>
 </div>
@@ -447,7 +478,7 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00022">22</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flow_8hpp_source.html#l00024">24</a> of file <a class="el" href="flow_8hpp_source.html">flow.hpp</a>.</p>
 
 </div>
 </div>
@@ -460,7 +491,7 @@ class stlb::graph::__dinitz&lt; _weight &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestlb.html">stlb</a></li><li class="navelem"><a class="el" href="namespacestlb_1_1graph.html">graph</a></li><li class="navelem"><a class="el" href="classstlb_1_1graph_1_1____dinitz.html">__dinitz</a></li>
-    <li class="footer">Generated on Fri Nov 15 2019 20:14:42 for ⠀ by
+    <li class="footer">Generated on Tue Dec 31 2019 01:25:51 for ⠀ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

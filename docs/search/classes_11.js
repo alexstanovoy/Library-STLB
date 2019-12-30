@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uint_5ft',['uint_t',['../classstlb_1_1multiprecision_1_1uint__t.html',1,'stlb::multiprecision']]]
+  ['trie',['trie',['../classstlb_1_1data__structure_1_1trie.html',1,'stlb::data_structure']]]
 ];

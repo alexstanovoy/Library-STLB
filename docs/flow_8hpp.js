@@ -3,7 +3,7 @@ var flow_8hpp =
     [ "__dinitz", "classstlb_1_1graph_1_1____dinitz.html", "classstlb_1_1graph_1_1____dinitz" ],
     [ "__push_relabel", "classstlb_1_1graph_1_1____push__relabel.html", "classstlb_1_1graph_1_1____push__relabel" ],
     [ "__malhotra", "classstlb_1_1graph_1_1____malhotra.html", "classstlb_1_1graph_1_1____malhotra" ],
-    [ "dinitz", "flow_8hpp.html#ac79be79bc636b2e2036111d4438febc2", null ],
-    [ "malhotra", "flow_8hpp.html#a8164ed4bd4e1472c19ab81e994d402fb", null ],
-    [ "push_relabel", "flow_8hpp.html#a07083305d4e4160ba8f7974cdf364bc6", null ]
+    [ "dinitz", "flow_8hpp.html#a10fd0f28b8fcf915c8f9ad846b078e8d", null ],
+    [ "malhotra", "flow_8hpp.html#a939cc41b8ac73d46ea5f8f6384ecdd94", null ],
+    [ "push_relabel", "flow_8hpp.html#adf8fe3a8ef609c93a2d629bfe1041eae", null ]
 ];

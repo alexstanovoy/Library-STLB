@@ -7,11 +7,11 @@
 
 int main() {
     const size_t n = 100000;
-    std::mt19937 rnd(45456);
+    std::mt19937_64 rnd(45456);
 
     std::vector<unsigned __int128> vec1(n);
     std::generate(vec1.begin(), vec1.end(), [&]() {
-        return static_cast<unsigned __int128>(rnd()) + static_cast<unsigned __int128>(rnd());
+        return (static_cast<unsigned __int128>(rnd()) << 64) + static_cast<unsigned __int128>(rnd());
     });
     std::vector<unsigned __int128> vec2 = vec1;
 

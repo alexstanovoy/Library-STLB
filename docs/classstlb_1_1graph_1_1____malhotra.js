@@ -1,12 +1,13 @@
 var classstlb_1_1graph_1_1____malhotra =
 [
-    [ "__malhotra", "classstlb_1_1graph_1_1____malhotra.html#a52fb7b1f9518d557dffda68cd790e494", null ],
+    [ "iter_t", "classstlb_1_1graph_1_1____malhotra.html#a431f6cf16999b466171e114635c84923", null ],
+    [ "__malhotra", "classstlb_1_1graph_1_1____malhotra.html#a4b18de344bdb2f6a428b8785a5d22389", null ],
     [ "blocking_flow_", "classstlb_1_1graph_1_1____malhotra.html#abb121aed2688b24e2a3f9a30d7ba92c4", null ],
     [ "construct_dist_", "classstlb_1_1graph_1_1____malhotra.html#a7bd8d54ae7f7d1754b9e45baf4f6d4b0", null ],
     [ "flow", "classstlb_1_1graph_1_1____malhotra.html#a3627aa1ba9ebb0df81c7fd0cb6cd2247", null ],
-    [ "get_pot_", "classstlb_1_1graph_1_1____malhotra.html#a700e3d61f3c460ee3b7c164ab357190f", null ],
+    [ "get_pot_", "classstlb_1_1graph_1_1____malhotra.html#a7a399460778916dbad777b9950de2332", null ],
     [ "init_potentials_", "classstlb_1_1graph_1_1____malhotra.html#a1cb2345d3e303acad2fb20bf4444f88e", null ],
-    [ "push_", "classstlb_1_1graph_1_1____malhotra.html#a9b2a26246ae4f6dae1c5c0099187bbf4", null ],
+    [ "push_", "classstlb_1_1graph_1_1____malhotra.html#abdde1fdb0017cf51c74d58b41102527b", null ],
     [ "_dist", "classstlb_1_1graph_1_1____malhotra.html#aa677406237a1b6bc4e01b5f5668ca6e6", null ],
     [ "_dst", "classstlb_1_1graph_1_1____malhotra.html#ab9f17efcfa9802748a766a972dbb6ada", null ],
     [ "_net", "classstlb_1_1graph_1_1____malhotra.html#aae0a055465452d43ee0c28e5b278446a", null ],

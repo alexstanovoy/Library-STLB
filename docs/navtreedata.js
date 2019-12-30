@@ -61,9 +61,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithm_8hpp.html",
-"classstlb_1_1geometry_1_1____are__inside__polygon.html#a3376913c86a3bb0dfa2e0608c5fcf55a",
-"geom_8hpp.html#a081ab8db9ba83c2853eebce8cd1610f3",
-"structstlb_1_1geometry_1_1vector2.html#a44378f85d549da8f7fca8ded86a443ae"
+"classstlb_1_1data__structure_1_1trie_1_1iterator.html#a4c5a8ad1e9592c01107c380dfa982ea6",
+"classstlb_1_1utility_1_1huffman.html",
+"structstlb_1_1geometry_1_1circle.html#a457d001a4012e8cc89be119f82133fd2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

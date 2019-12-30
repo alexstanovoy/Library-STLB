@@ -1,7 +1,7 @@
 var searchData=
 [
   ['absol',['absol',['../namespacestlb_1_1geometry.html#a57ff713788bc73f19768edb147962e71',1,'stlb::geometry']]],
-  ['add_5fedge',['add_edge',['../classstlb_1_1graph_1_1graph.html#a163c1a6552bc52a6b65f86f79c3458aa',1,'stlb::graph::graph::add_edge()'],['../classstlb_1_1graph_1_1list__graph.html#a4cfe9eda063fb804b46d506a6dc0dcc5',1,'stlb::graph::list_graph::add_edge()'],['../classstlb_1_1graph_1_1network.html#a598c41cd82cfe3b6eaa097e6b95a270d',1,'stlb::graph::network::add_edge()']]],
+  ['add_5fedge',['add_edge',['../classstlb_1_1graph_1_1dir__list__graph.html#a6e0d2e7ade0788673a51eac0087b559b',1,'stlb::graph::dir_list_graph::add_edge()'],['../classstlb_1_1graph_1_1network.html#a1a61de680714758413719f4cf8c787aa',1,'stlb::graph::network::add_edge()']]],
   ['all',['all',['../classstlb_1_1data__structure_1_1bitset.html#ae57da118fe7b0318147c08e2b5e96cae',1,'stlb::data_structure::bitset']]],
   ['angle',['angle',['../namespacestlb_1_1geometry.html#a729e6523625ed22e31a93505a9d533a8',1,'stlb::geometry']]],
   ['any',['any',['../classstlb_1_1data__structure_1_1bitset.html#a949cd404703902fe3653d0a40f9e555d',1,'stlb::data_structure::bitset']]],
@@ -10,5 +10,7 @@ var searchData=
   ['are_5fintersect_5finf',['are_intersect_inf',['../namespacestlb_1_1geometry.html#a01a68f08ed0461c7391e62273a272aa7',1,'stlb::geometry']]],
   ['are_5fon_5fline',['are_on_line',['../namespacestlb_1_1geometry.html#a46aac3c326c3f5f2a7b8a3c4776d4a40',1,'stlb::geometry']]],
   ['are_5fsemiplane_5fsame',['are_semiplane_same',['../namespacestlb_1_1geometry.html#aab55aa278df0900bd8d889914cc3dade',1,'stlb::geometry::are_semiplane_same(const vector2&lt; store_type &gt; &amp;divider, const vector2&lt; store_type &gt; &amp;point1, const vector2&lt; store_type &gt; &amp;point2) noexcept'],['../namespacestlb_1_1geometry.html#a3a6a29d4cf0daf66590f6680c976a75c',1,'stlb::geometry::are_semiplane_same(const point&lt; store_type &gt; &amp;line_point1, const point&lt; store_type &gt; &amp;line_point2, const point&lt; store_type &gt; &amp;point1, const point&lt; store_type &gt; &amp;point2) noexcept']]],
-  ['area',['area',['../namespacestlb_1_1geometry.html#a9a7bcff73a9199abc52eef44f4cc4d7b',1,'stlb::geometry::area(const vector2&lt; store_type &gt; &amp;lhs, const vector2&lt; store_type &gt; &amp;rhs) noexcept'],['../namespacestlb_1_1geometry.html#a3fff5aa1812a1846007b27596ebae59e',1,'stlb::geometry::area(const polygon&lt; store_type &gt; &amp;pl) noexcept']]]
+  ['area',['area',['../namespacestlb_1_1geometry.html#a9a7bcff73a9199abc52eef44f4cc4d7b',1,'stlb::geometry::area(const vector2&lt; store_type &gt; &amp;lhs, const vector2&lt; store_type &gt; &amp;rhs) noexcept'],['../namespacestlb_1_1geometry.html#a3fff5aa1812a1846007b27596ebae59e',1,'stlb::geometry::area(const polygon&lt; store_type &gt; &amp;pl) noexcept']]],
+  ['auto_5fedge_5ft',['auto_edge_t',['../structstlb_1_1graph_1_1auto__edge__t.html#a65562fc12a5a944b1c95f0664009271a',1,'stlb::graph::auto_edge_t']]],
+  ['automation',['automation',['../classstlb_1_1graph_1_1automation.html#aa5807f73f41a8d7343fc144296145da1',1,'stlb::graph::automation::automation() noexcept'],['../classstlb_1_1graph_1_1automation.html#a2e62b4fe1c3520a412831817413b80bb',1,'stlb::graph::automation::automation(const automation&lt; _min_key, _max_key &gt; &amp;other)=default'],['../classstlb_1_1graph_1_1automation.html#a8db82d779df973a9951a0c93bebc7a97',1,'stlb::graph::automation::automation(automation&lt; _min_key, _max_key &gt; &amp;&amp;other) noexcept=default']]]
 ];

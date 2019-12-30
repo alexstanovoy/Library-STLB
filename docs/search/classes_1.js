@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bitset',['bitset',['../classstlb_1_1data__structure_1_1bitset.html',1,'stlb::data_structure']]],
-  ['bitvec',['bitvec',['../classstlb_1_1data__structure_1_1bitvec.html',1,'stlb::data_structure']]]
+  ['auto_5fedge_5ft',['auto_edge_t',['../structstlb_1_1graph_1_1auto__edge__t.html',1,'stlb::graph']]],
+  ['automation',['automation',['../classstlb_1_1graph_1_1automation.html',1,'stlb::graph']]]
 ];

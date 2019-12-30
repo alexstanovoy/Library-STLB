@@ -102,7 +102,9 @@ $(document).ready(function(){initNavTree('algorithm_8hpp.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;complex&gt;</code><br />
 <code>#include &lt;climits&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 </div>
@@ -110,9 +112,9 @@ $(document).ready(function(){initNavTree('algorithm_8hpp.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstlb_1_1algorithm_1_1operand.html">operand</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1algorithm_1_1____fast__fourier__transform.html">__fast_fourier_transform&lt; RandomIt &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1algorithm_1_1____infix__to__prefix.html">__infix_to_prefix</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstlb_1_1algorithm_1_1____suffix__array.html">__suffix_array&lt; RandomIt &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -124,29 +126,39 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a484f196e97ea92193201ee61a604496e"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt , class Getter &gt; </td></tr>
-<tr class="memitem:a484f196e97ea92193201ee61a604496e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a484f196e97ea92193201ee61a604496e">radix_sort</a> (const ForwardIt first, const ForwardIt last, const Getter &amp;get_key)</td></tr>
-<tr class="separator:a484f196e97ea92193201ee61a604496e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22829792cc6d424774adb404dc6bc4a7"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt &gt; </td></tr>
-<tr class="memitem:a22829792cc6d424774adb404dc6bc4a7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a22829792cc6d424774adb404dc6bc4a7">radix_sort</a> (const ForwardIt first, const ForwardIt last)</td></tr>
-<tr class="separator:a22829792cc6d424774adb404dc6bc4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98c40139e68bc0bfd35a5c8b2b285cb8"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt , class Getter &gt; </td></tr>
-<tr class="memitem:a98c40139e68bc0bfd35a5c8b2b285cb8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a98c40139e68bc0bfd35a5c8b2b285cb8">radix_nth_element</a> (const ForwardIt first, const ForwardIt last, size_t k, const Getter &amp;get_key)</td></tr>
-<tr class="separator:a98c40139e68bc0bfd35a5c8b2b285cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e4babc068778089e33c5e9b7e43df5"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt &gt; </td></tr>
-<tr class="memitem:a42e4babc068778089e33c5e9b7e43df5"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a42e4babc068778089e33c5e9b7e43df5">radix_nth_element</a> (const ForwardIt first, const ForwardIt last, const size_t k)</td></tr>
-<tr class="separator:a42e4babc068778089e33c5e9b7e43df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1891b72fa36e48f6394e67988202d6fc"><td class="memTemplParams" colspan="2">template&lt;class RandomIt &gt; </td></tr>
-<tr class="memitem:a1891b72fa36e48f6394e67988202d6fc"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a1891b72fa36e48f6394e67988202d6fc">prefix_function</a> (const RandomIt first, const RandomIt last)</td></tr>
-<tr class="separator:a1891b72fa36e48f6394e67988202d6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a5371325ef7ad88e292f4b97a9855d"><td class="memTemplParams" colspan="2">template&lt;class RandomIt &gt; </td></tr>
-<tr class="memitem:a40a5371325ef7ad88e292f4b97a9855d"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a40a5371325ef7ad88e292f4b97a9855d">z_function</a> (const RandomIt first, const RandomIt last)</td></tr>
-<tr class="separator:a40a5371325ef7ad88e292f4b97a9855d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9d4a9723197f3ab75a618f2b8e5316"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt , class Getter &gt; </td></tr>
+<tr class="memitem:aeb9d4a9723197f3ab75a618f2b8e5316"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#aeb9d4a9723197f3ab75a618f2b8e5316">radix_sort</a> (const ForwardIt first, const ForwardIt last, const Getter &amp;get_key) noexcept</td></tr>
+<tr class="separator:aeb9d4a9723197f3ab75a618f2b8e5316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412858ea1d81db5b03b64f190e2e0988"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt &gt; </td></tr>
+<tr class="memitem:a412858ea1d81db5b03b64f190e2e0988"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a412858ea1d81db5b03b64f190e2e0988">radix_sort</a> (const ForwardIt first, const ForwardIt last) noexcept</td></tr>
+<tr class="separator:a412858ea1d81db5b03b64f190e2e0988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d43498080b1d34e6ac04bed655a11b"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt , class Getter &gt; </td></tr>
+<tr class="memitem:af1d43498080b1d34e6ac04bed655a11b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#af1d43498080b1d34e6ac04bed655a11b">radix_nth_element</a> (const ForwardIt first, const ForwardIt last, size_t k, const Getter &amp;get_key) noexcept</td></tr>
+<tr class="separator:af1d43498080b1d34e6ac04bed655a11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4aff3c4160a41d0d15ccb1b8250e63"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt &gt; </td></tr>
+<tr class="memitem:afe4aff3c4160a41d0d15ccb1b8250e63"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#afe4aff3c4160a41d0d15ccb1b8250e63">radix_nth_element</a> (const ForwardIt first, const ForwardIt last, const size_t k) noexcept</td></tr>
+<tr class="separator:afe4aff3c4160a41d0d15ccb1b8250e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eab5e65736727b50b6f15aba3ea5ad8"><td class="memTemplParams" colspan="2">template&lt;class RandomIt , class AreSame &gt; </td></tr>
+<tr class="memitem:a5eab5e65736727b50b6f15aba3ea5ad8"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a5eab5e65736727b50b6f15aba3ea5ad8">prefix_function</a> (const RandomIt first, const RandomIt last, const AreSame &amp;are_same) noexcept</td></tr>
+<tr class="separator:a5eab5e65736727b50b6f15aba3ea5ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04372fd7b9af595d7f49a7b0924cab2e"><td class="memTemplParams" colspan="2">template&lt;class RandomIt &gt; </td></tr>
+<tr class="memitem:a04372fd7b9af595d7f49a7b0924cab2e"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a04372fd7b9af595d7f49a7b0924cab2e">prefix_function</a> (const RandomIt first, const RandomIt last) noexcept</td></tr>
+<tr class="separator:a04372fd7b9af595d7f49a7b0924cab2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d134e896080c874ef40df274833f17b"><td class="memTemplParams" colspan="2">template&lt;class RandomIt , class AreSame &gt; </td></tr>
+<tr class="memitem:a4d134e896080c874ef40df274833f17b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a4d134e896080c874ef40df274833f17b">z_function</a> (const RandomIt first, const RandomIt last, const AreSame &amp;are_same) noexcept</td></tr>
+<tr class="separator:a4d134e896080c874ef40df274833f17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4dd4dde1094019af6f80678b1fec2c"><td class="memTemplParams" colspan="2">template&lt;class RandomIt &gt; </td></tr>
+<tr class="memitem:a5a4dd4dde1094019af6f80678b1fec2c"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a5a4dd4dde1094019af6f80678b1fec2c">z_function</a> (const RandomIt first, const RandomIt last) noexcept</td></tr>
+<tr class="separator:a5a4dd4dde1094019af6f80678b1fec2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc1a5cf478500004b35a1ed24f452ec4"><td class="memTemplParams" colspan="2">template&lt;class RandomIt &gt; </td></tr>
 <tr class="memitem:afc1a5cf478500004b35a1ed24f452ec4"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; size_t, size_t &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#afc1a5cf478500004b35a1ed24f452ec4">manacher</a> (const RandomIt first, const RandomIt last)</td></tr>
 <tr class="separator:afc1a5cf478500004b35a1ed24f452ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9eaf682db43597af0cb1761fbe1a15"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a4b9eaf682db43597af0cb1761fbe1a15">infix_to_prefix</a> (const std::string &amp;str) noexcept</td></tr>
-<tr class="separator:a4b9eaf682db43597af0cb1761fbe1a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ddd1940ad117dd6b1e83567cd12d6c5"><td class="memTemplParams" colspan="2">template&lt;class RandomIt &gt; </td></tr>
+<tr class="memitem:a5ddd1940ad117dd6b1e83567cd12d6c5"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#a5ddd1940ad117dd6b1e83567cd12d6c5">fast_fourier_transform</a> (const RandomIt first1, const RandomIt last1, const RandomIt first2, const RandomIt last2) noexcept</td></tr>
+<tr class="separator:a5ddd1940ad117dd6b1e83567cd12d6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae168378fe332eebc48488ce67ae4afe0"><td class="memTemplParams" colspan="2">template&lt;class RandomIt &gt; </td></tr>
+<tr class="memitem:ae168378fe332eebc48488ce67ae4afe0"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1algorithm.html#ae168378fe332eebc48488ce67ae4afe0">suffix_array</a> (const RandomIt first, const RandomIt last) noexcept</td></tr>
+<tr class="separator:ae168378fe332eebc48488ce67ae4afe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -154,7 +166,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_97b792eefb87a61eba39a8e8383895b8.html">bare</a></li><li class="navelem"><a class="el" href="algorithm_8hpp.html">algorithm.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 15 2019 20:14:42 for ⠀ by
+    <li class="footer">Generated on Tue Dec 31 2019 01:25:51 for ⠀ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

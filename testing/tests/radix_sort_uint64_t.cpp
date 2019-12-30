@@ -7,7 +7,7 @@
 
 int main() {
     const size_t n = 100000;
-    std::mt19937 rnd(23446);
+    std::mt19937_64 rnd(23446);
 
     std::vector<uint64_t> vec1(n);
     std::generate(vec1.begin(), vec1.end(), rnd);

@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('flow_8hpp.html','');});
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &quot;<a class="el" href="graph_8hpp_source.html">graph.hpp</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div>
 <p><a href="flow_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -128,15 +129,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac79be79bc636b2e2036111d4438febc2"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
-<tr class="memitem:ac79be79bc636b2e2036111d4438febc2"><td class="memTemplItemLeft" align="right" valign="top">_weight&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#ac79be79bc636b2e2036111d4438febc2">dinitz</a> (network&lt; _weight &gt; &amp;net, const size_t source, const size_t destination) noexcept</td></tr>
-<tr class="separator:ac79be79bc636b2e2036111d4438febc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07083305d4e4160ba8f7974cdf364bc6"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
-<tr class="memitem:a07083305d4e4160ba8f7974cdf364bc6"><td class="memTemplItemLeft" align="right" valign="top">_weight&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#a07083305d4e4160ba8f7974cdf364bc6">push_relabel</a> (network&lt; _weight &gt; net, const size_t source, const size_t destination) noexcept</td></tr>
-<tr class="separator:a07083305d4e4160ba8f7974cdf364bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8164ed4bd4e1472c19ab81e994d402fb"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
-<tr class="memitem:a8164ed4bd4e1472c19ab81e994d402fb"><td class="memTemplItemLeft" align="right" valign="top">_weight&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#a8164ed4bd4e1472c19ab81e994d402fb">malhotra</a> (network&lt; _weight &gt; net, const size_t source, const size_t destination) noexcept</td></tr>
-<tr class="separator:a8164ed4bd4e1472c19ab81e994d402fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fd0f28b8fcf915c8f9ad846b078e8d"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
+<tr class="memitem:a10fd0f28b8fcf915c8f9ad846b078e8d"><td class="memTemplItemLeft" align="right" valign="top">_weight&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#a10fd0f28b8fcf915c8f9ad846b078e8d">dinitz</a> (network&lt; _weight &gt; &amp;net, const size_t &amp;source, const size_t &amp;destination) noexcept</td></tr>
+<tr class="separator:a10fd0f28b8fcf915c8f9ad846b078e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8fe3a8ef609c93a2d629bfe1041eae"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
+<tr class="memitem:adf8fe3a8ef609c93a2d629bfe1041eae"><td class="memTemplItemLeft" align="right" valign="top">_weight&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#adf8fe3a8ef609c93a2d629bfe1041eae">push_relabel</a> (network&lt; _weight &gt; &amp;net, const size_t &amp;source, const size_t &amp;destination) noexcept</td></tr>
+<tr class="separator:adf8fe3a8ef609c93a2d629bfe1041eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939cc41b8ac73d46ea5f8f6384ecdd94"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
+<tr class="memitem:a939cc41b8ac73d46ea5f8f6384ecdd94"><td class="memTemplItemLeft" align="right" valign="top">_weight&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#a939cc41b8ac73d46ea5f8f6384ecdd94">malhotra</a> (network&lt; _weight &gt; &amp;net, const size_t &amp;source, const size_t &amp;destination) noexcept</td></tr>
+<tr class="separator:a939cc41b8ac73d46ea5f8f6384ecdd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -144,7 +145,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_97b792eefb87a61eba39a8e8383895b8.html">bare</a></li><li class="navelem"><a class="el" href="flow_8hpp.html">flow.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 15 2019 20:14:42 for ⠀ by
+    <li class="footer">Generated on Tue Dec 31 2019 01:25:51 for ⠀ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

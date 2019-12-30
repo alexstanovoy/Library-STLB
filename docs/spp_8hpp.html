@@ -103,6 +103,8 @@ $(document).ready(function(){initNavTree('spp_8hpp.html','');});
 <div class="textblock"><code>#include &lt;set&gt;</code><br />
 <code>#include &lt;queue&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &quot;<a class="el" href="set_8hpp_source.html">set.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="graph_8hpp_source.html">graph.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fib__heap_8hpp_source.html">fib_heap.hpp</a>&quot;</code><br />
@@ -118,24 +120,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0f47face312c7c72dcd8dac28c56e27c"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
-<tr class="memitem:a0f47face312c7c72dcd8dac28c56e27c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#a0f47face312c7c72dcd8dac28c56e27c">dijkstra_bin_heap</a> (const list_graph&lt; _weight &gt; &amp;graph, const size_t start)</td></tr>
-<tr class="separator:a0f47face312c7c72dcd8dac28c56e27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8c8b50198917f31f4e6a1aa5ae3e16"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
-<tr class="memitem:a6b8c8b50198917f31f4e6a1aa5ae3e16"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#a6b8c8b50198917f31f4e6a1aa5ae3e16">dijkstra_rb_tree</a> (const list_graph&lt; _weight &gt; &amp;graph, const size_t start)</td></tr>
-<tr class="separator:a6b8c8b50198917f31f4e6a1aa5ae3e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc7a4e3c0c2900d5221c5a1488a195f"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
-<tr class="memitem:a0fc7a4e3c0c2900d5221c5a1488a195f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#a0fc7a4e3c0c2900d5221c5a1488a195f">dijkstra_avl_tree</a> (const list_graph&lt; _weight &gt; &amp;graph, const size_t start)</td></tr>
-<tr class="separator:a0fc7a4e3c0c2900d5221c5a1488a195f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa55b8e8ea9fb5f396e041772c5433f12"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
-<tr class="memitem:aa55b8e8ea9fb5f396e041772c5433f12"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#aa55b8e8ea9fb5f396e041772c5433f12">dijkstra_fib_heap</a> (const list_graph&lt; _weight &gt; &amp;graph, const size_t start)</td></tr>
-<tr class="separator:aa55b8e8ea9fb5f396e041772c5433f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb67fd4eaa7917a4a06fa3529625a8a"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
-<tr class="memitem:aedb67fd4eaa7917a4a06fa3529625a8a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#aedb67fd4eaa7917a4a06fa3529625a8a">ford_bellman</a> (const list_graph&lt; _weight &gt; &amp;graph, const size_t start)</td></tr>
-<tr class="separator:aedb67fd4eaa7917a4a06fa3529625a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ee3d7424f6ee61e2131ea3c5c140c93"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
-<tr class="memitem:a1ee3d7424f6ee61e2131ea3c5c140c93"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#a1ee3d7424f6ee61e2131ea3c5c140c93">SPFA</a> (const list_graph&lt; _weight &gt; &amp;graph, const size_t start)</td></tr>
-<tr class="separator:a1ee3d7424f6ee61e2131ea3c5c140c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf65b98e688b571dbd89e2ccc570622c"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
+<tr class="memitem:adf65b98e688b571dbd89e2ccc570622c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#adf65b98e688b571dbd89e2ccc570622c">dijkstra_bin_heap</a> (const graph&lt; _weight &gt; &amp;graph, const size_t start) noexcept</td></tr>
+<tr class="separator:adf65b98e688b571dbd89e2ccc570622c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae8e8a936e3f9782a747d7ff5a5329b"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
+<tr class="memitem:afae8e8a936e3f9782a747d7ff5a5329b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#afae8e8a936e3f9782a747d7ff5a5329b">dijkstra_rb_tree</a> (const graph&lt; _weight &gt; &amp;graph, const size_t start) noexcept</td></tr>
+<tr class="separator:afae8e8a936e3f9782a747d7ff5a5329b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa905d4791e226c40f7c71499054554"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
+<tr class="memitem:a2aa905d4791e226c40f7c71499054554"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#a2aa905d4791e226c40f7c71499054554">dijkstra_avl_tree</a> (const graph&lt; _weight &gt; &amp;graph, const size_t start) noexcept</td></tr>
+<tr class="separator:a2aa905d4791e226c40f7c71499054554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c5620fe52844e69f73fb52c69969dd"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
+<tr class="memitem:aa2c5620fe52844e69f73fb52c69969dd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#aa2c5620fe52844e69f73fb52c69969dd">dijkstra_fib_heap</a> (const graph&lt; _weight &gt; &amp;g, const size_t start) noexcept</td></tr>
+<tr class="separator:aa2c5620fe52844e69f73fb52c69969dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98860004a8a82a6f5902a4deb991ab5"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
+<tr class="memitem:aa98860004a8a82a6f5902a4deb991ab5"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#aa98860004a8a82a6f5902a4deb991ab5">ford_bellman</a> (const graph&lt; _weight &gt; &amp;graph, const size_t start) noexcept</td></tr>
+<tr class="separator:aa98860004a8a82a6f5902a4deb991ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef97a4a200f12223a1fc528ae8320bd"><td class="memTemplParams" colspan="2">template&lt;typename _weight &gt; </td></tr>
+<tr class="memitem:acef97a4a200f12223a1fc528ae8320bd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestlb_1_1graph.html#acef97a4a200f12223a1fc528ae8320bd">SPFA</a> (const graph&lt; _weight &gt; &amp;graph, const size_t start) noexcept</td></tr>
+<tr class="separator:acef97a4a200f12223a1fc528ae8320bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -143,7 +145,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_97b792eefb87a61eba39a8e8383895b8.html">bare</a></li><li class="navelem"><a class="el" href="spp_8hpp.html">spp.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 15 2019 20:14:42 for ⠀ by
+    <li class="footer">Generated on Tue Dec 31 2019 01:25:51 for ⠀ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

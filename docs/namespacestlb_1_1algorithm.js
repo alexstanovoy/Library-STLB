@@ -1,5 +1,6 @@
 var namespacestlb_1_1algorithm =
 [
-    [ "__infix_to_prefix", "classstlb_1_1algorithm_1_1____infix__to__prefix.html", "classstlb_1_1algorithm_1_1____infix__to__prefix" ],
-    [ "operand", "structstlb_1_1algorithm_1_1operand.html", "structstlb_1_1algorithm_1_1operand" ]
+    [ "__fast_fourier_transform", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html", "classstlb_1_1algorithm_1_1____fast__fourier__transform" ],
+    [ "__suffix_array", "classstlb_1_1algorithm_1_1____suffix__array.html", "classstlb_1_1algorithm_1_1____suffix__array" ],
+    [ "suffix_automation", "classstlb_1_1algorithm_1_1suffix__automation.html", "classstlb_1_1algorithm_1_1suffix__automation" ]
 ];

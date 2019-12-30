@@ -1,13 +1,16 @@
 var algorithm_8hpp =
 [
-    [ "operand", "structstlb_1_1algorithm_1_1operand.html", "structstlb_1_1algorithm_1_1operand" ],
-    [ "__infix_to_prefix", "classstlb_1_1algorithm_1_1____infix__to__prefix.html", "classstlb_1_1algorithm_1_1____infix__to__prefix" ],
-    [ "infix_to_prefix", "algorithm_8hpp.html#a4b9eaf682db43597af0cb1761fbe1a15", null ],
+    [ "__fast_fourier_transform", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html", "classstlb_1_1algorithm_1_1____fast__fourier__transform" ],
+    [ "__suffix_array", "classstlb_1_1algorithm_1_1____suffix__array.html", "classstlb_1_1algorithm_1_1____suffix__array" ],
+    [ "fast_fourier_transform", "algorithm_8hpp.html#a5ddd1940ad117dd6b1e83567cd12d6c5", null ],
     [ "manacher", "algorithm_8hpp.html#afc1a5cf478500004b35a1ed24f452ec4", null ],
-    [ "prefix_function", "algorithm_8hpp.html#a1891b72fa36e48f6394e67988202d6fc", null ],
-    [ "radix_nth_element", "algorithm_8hpp.html#a98c40139e68bc0bfd35a5c8b2b285cb8", null ],
-    [ "radix_nth_element", "algorithm_8hpp.html#a42e4babc068778089e33c5e9b7e43df5", null ],
-    [ "radix_sort", "algorithm_8hpp.html#a484f196e97ea92193201ee61a604496e", null ],
-    [ "radix_sort", "algorithm_8hpp.html#a22829792cc6d424774adb404dc6bc4a7", null ],
-    [ "z_function", "algorithm_8hpp.html#a40a5371325ef7ad88e292f4b97a9855d", null ]
+    [ "prefix_function", "algorithm_8hpp.html#a5eab5e65736727b50b6f15aba3ea5ad8", null ],
+    [ "prefix_function", "algorithm_8hpp.html#a04372fd7b9af595d7f49a7b0924cab2e", null ],
+    [ "radix_nth_element", "algorithm_8hpp.html#af1d43498080b1d34e6ac04bed655a11b", null ],
+    [ "radix_nth_element", "algorithm_8hpp.html#afe4aff3c4160a41d0d15ccb1b8250e63", null ],
+    [ "radix_sort", "algorithm_8hpp.html#aeb9d4a9723197f3ab75a618f2b8e5316", null ],
+    [ "radix_sort", "algorithm_8hpp.html#a412858ea1d81db5b03b64f190e2e0988", null ],
+    [ "suffix_array", "algorithm_8hpp.html#ae168378fe332eebc48488ce67ae4afe0", null ],
+    [ "z_function", "algorithm_8hpp.html#a4d134e896080c874ef40df274833f17b", null ],
+    [ "z_function", "algorithm_8hpp.html#a5a4dd4dde1094019af6f80678b1fec2c", null ]
 ];

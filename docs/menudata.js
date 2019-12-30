@@ -144,10 +144,12 @@ var menudata={children:[
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html"},
 {text:"Related Functions",url:"functions_rela.html",children:[
+{text:"a",url:"functions_rela.html#index_a"},
 {text:"b",url:"functions_rela.html#index_b"},
-{text:"i",url:"functions_rela.html#index_i"},
+{text:"d",url:"functions_rela.html#index_d"},
 {text:"n",url:"functions_rela.html#index_n"},
-{text:"o",url:"functions_rela.html#index_o"}]}]}]},
+{text:"o",url:"functions_rela.html#index_o"},
+{text:"t",url:"functions_rela.html#index_t"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[
