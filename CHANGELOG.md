@@ -6,27 +6,35 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Linear suffix array construction (`suffix_array`) [by Juha Karkkainen and Peter Sanders](https://www.cs.helsinki.fi/u/tpkarkka/publications/icalp03.pdf).
+- Linear LCP array construction (`lcp_array`) [by Toru Kasai, Gunho Lee, Hiroki Arimura, Setsuo Arikawa, and Kunsoo Park](http://web.cs.iastate.edu/~cs548/references/linear_lcp.pdf).
+- Improved perfomance Fast Fourier transform (`fast_fourier_transform`).
+
+### Changed
+- `radix_sort` signature.
+
+### Removed
+- `radix_nth_element`. Will be rewritten soon.
 
 ## [0.0.3] - 2019-12-31
 ### Added
-- ***Added*** draft Earley parser implementation.
+- Draft Earley parser implementation.
 
 ## [0.0.2] - 2019-11-15
 ### Added
+- Prefix function (`prefix_function`).
+- Z-function (`z_function`).
+- Manacher algorithm (`manacher`).
+- Shunting yard algorithm (`infix_to_prefix`).
+- Draft `bitset` documentation.
+
+### Changed
 - All present algorithms were split by namespaces.
-- ***Changed*** `radix_sort` and `radix_nth_element` signature.
-- ***Added*** Prefix function (`prefix_function`).
-- ***Added*** Z-function (`z_function`).
-- ***Added*** Manacher algorithm (`manacher`).
-- ***Added*** Shunting yard algorithm (`infix_to_prefix`).
-- ***Added*** draft `bitset` documentation.
-- `bitvec` is ***deprecated***.
+- `radix_sort` and `radix_nth_element` signature.
 
-## [0.0.1] - 2019-
-### Added
+### Deprecated
+- `bitvec`.
+
+## [0.0.1] - 2019-11-2
 - Initial Release.
-
-[Unreleased]: https://github.com/AjReme/Library-STLB/compare/v1.0.0...HEAD
-[0.0.3]: https://github.com/AjReme/Library-STLB/compare/v0.0.2...v0.0.3
-[0.0.2]: https://github.com/AjReme/Library-STLB/compare/v0.0.1...v0.0.2
-[0.0.1]: https://github.com/AjReme/Library-STLB/releases/tag/v0.0.1

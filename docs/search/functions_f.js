@@ -7,7 +7,7 @@ var searchData=
   ['pop_5fbit',['pop_bit',['../classstlb_1_1data__structure_1_1bitvec.html#a425c1dc3807777b0ee128be180eff165',1,'stlb::data_structure::bitvec']]],
   ['pop_5fbyte',['pop_byte',['../classstlb_1_1data__structure_1_1bitvec.html#adcbe7169b3f96bc2c5d16923bf5e29c1',1,'stlb::data_structure::bitvec']]],
   ['predict_5f',['predict_',['../classstlb_1_1utility_1_1earley__parser.html#ae61439ddcdb648c2d94052f31af5a04c',1,'stlb::utility::earley_parser']]],
-  ['prefix_5ffunction',['prefix_function',['../namespacestlb_1_1algorithm.html#a5eab5e65736727b50b6f15aba3ea5ad8',1,'stlb::algorithm::prefix_function(const RandomIt first, const RandomIt last, const AreSame &amp;are_same) noexcept'],['../namespacestlb_1_1algorithm.html#a04372fd7b9af595d7f49a7b0924cab2e',1,'stlb::algorithm::prefix_function(const RandomIt first, const RandomIt last) noexcept']]],
+  ['prefix_5ffunction',['prefix_function',['../namespacestlb_1_1algorithm.html#a1161121ec7a02780dedbc2e9e639179b',1,'stlb::algorithm::prefix_function(const RandomIt &amp;first, const RandomIt &amp;last) noexcept'],['../namespacestlb_1_1algorithm.html#a180390f0edde1326a3417a6eaa52b23f',1,'stlb::algorithm::prefix_function(const RandomIt &amp;first, const RandomIt &amp;last, const EqualTo &amp;equal) noexcept']]],
   ['prev_5fone',['prev_one',['../classstlb_1_1data__structure_1_1bitset.html#ac201b011746ec8b8deb94ec5a129253a',1,'stlb::data_structure::bitset']]],
   ['prev_5fzero',['prev_zero',['../classstlb_1_1data__structure_1_1bitset.html#acaf535882ec6e47d63f3473ea99890b8',1,'stlb::data_structure::bitset']]],
   ['prim_5fbin_5fheap',['prim_bin_heap',['../namespacestlb_1_1graph.html#a3e39b40419ce56299c7b3bfe3e189bb7',1,'stlb::graph']]],

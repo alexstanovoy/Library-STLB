@@ -3,11 +3,10 @@
 #include "earley_parser.hpp"
 #include <iostream>
 
-
 std::mt19937 rnd(48913443);
 bool correct;
 
-std::string number() noexcept {
+std::string number() {
     std::string ret(rnd() % 10 + 1, '0');
     ret[0] = rnd() % 9 + 1 + '0';
     for (size_t i = 1; i < ret.size(); ++i) {
@@ -16,7 +15,7 @@ std::string number() noexcept {
     return ret;
 }
 
-char operation() noexcept {
+char operation() {
     switch (rnd() % 4) {
         case 0: {
             return '+';
@@ -36,7 +35,7 @@ char operation() noexcept {
     }
 }
 
-std::string expr(const size_t& depth) noexcept {
+std::string expr(const size_t& depth) {
     if (depth == 0 || rnd() % 5 == 0) {
         return number();
     }
@@ -48,7 +47,7 @@ std::string expr(const size_t& depth) noexcept {
     }
 }
 
-std::string gen() noexcept {
+std::string gen() {
     std::string ret = expr(rnd() % 20);
     if (rnd() % 3 == 0) {
         std::vector<size_t> pos;

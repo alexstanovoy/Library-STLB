@@ -1,13 +1,14 @@
 var classstlb_1_1algorithm_1_1____fast__fourier__transform =
 [
     [ "complex_d", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ae2691b95968a7fb4cc717bd5e04283bd", null ],
-    [ "type", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ab47f5b0cd1e557fa8170e8e9c67a536e", null ],
-    [ "__fast_fourier_transform", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a3276ce077682e40bf335f1da89de63b9", null ],
-    [ "calculate", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a102183bcf20faed3c2e8beec08d6de83", null ],
-    [ "fft_", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a94145d37329612d50793d082de0451d5", null ],
-    [ "upper_two_degree_", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a451c4b337e420ca24f8ba3999ae6d637", null ],
-    [ "_first1", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a1726f5085dec6f0057eca40a286eb5fa", null ],
-    [ "_first2", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a3b3cd1f24335db6d52491a237bc78577", null ],
-    [ "_last1", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a8e3b86c4b7ef3adf63a3ec459c519b90", null ],
-    [ "_last2", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a1c137d8a9f599112ca8b262db141dbd2", null ]
+    [ "__fast_fourier_transform", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a35e37f307b42bdf4f7fd9a23a12cf3e6", null ],
+    [ "~__fast_fourier_transform", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ab42e79d7b2121663af4547cf77715cbf", null ],
+    [ "calculate", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a5742bdf60ee39dd53b15621d80d227e3", null ],
+    [ "calculate_", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#adc9ae15f60587312d00912ff3c4251e3", null ],
+    [ "fft_", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ab0fdc1ca8d59b57ed03f3fac10af945a", null ],
+    [ "finalize_", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ab249370498ae6b5782b079122a8d8f48", null ],
+    [ "inverse_", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ac6b9f0d97ec12a89040a286eb086c100", null ],
+    [ "multiplicate_", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#affe982aa9a240a27a2947b8a4057382c", null ],
+    [ "reverse_", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a3409a1ac072f6febb0f4f3d4af3373b3", null ],
+    [ "upper_two_degree_", "classstlb_1_1algorithm_1_1____fast__fourier__transform.html#adef177d9d180ec458cf15daf2e63ef3d", null ]
 ];

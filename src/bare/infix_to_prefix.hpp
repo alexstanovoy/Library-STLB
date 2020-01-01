@@ -1,3 +1,4 @@
+#pragma once
 #include <stack>
 #include <queue>
 #include <vector>
@@ -12,13 +13,11 @@ namespace stlb
 
         struct operand
         {
-
             int32_t operands_number;
             const std::string str;
 
             operand(const int32_t operands_number, const std::string& str)
                 : operands_number(operands_number), str(str) {}
-
         };
 
 
@@ -32,19 +31,19 @@ namespace stlb
             std::vector<operand> _func;
             std::vector<size_t> _comma_counter;
 
-            bool is_digit_(const char symb) noexcept {
+            bool is_digit_(const char symb) const noexcept {
                 return '0' <= symb && symb <= '9';
             }
 
-            bool is_operand_(const char symb) noexcept {
+            bool is_operand_(const char symb) const noexcept {
                 return symb == '+' || symb == '-' || symb == '*' || symb == '/';
             }
 
-            bool is_alpha_(const char symb) noexcept {
+            bool is_alpha_(const char symb) const noexcept {
                 return ('a' <= symb && symb <= 'z') || ('A' <= symb && symb <= 'Z') || symb == '_';
             }
 
-            std::string get_num_(size_t& ind) noexcept {
+            std::string get_num_(size_t& ind) const noexcept {
                 std::string str;
                 while (ind < _expr.size() && is_digit_(_expr[ind])) {
                     str += _expr[ind++];
@@ -52,7 +51,7 @@ namespace stlb
                 return str;
             }
 
-            std::string get_name_(size_t& ind) noexcept {
+            std::string get_name_(size_t& ind) const noexcept {
                 std::string str;
                 while (ind < _expr.size() && (is_digit_(_expr[ind]) || is_alpha_(_expr[ind]))) {
                     str += _expr[ind++];
@@ -163,7 +162,6 @@ namespace stlb
             }
 
         };
-
 
         auto infix_to_prefix(const std::string& str) noexcept {
             return __infix_to_prefix(str).convert();

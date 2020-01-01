@@ -1,6 +1,7 @@
 #include <random>
 #include <time.h>
 #include <vector>
+#include <cassert>
 #include <algorithm>
 #include "algorithm.hpp"
 
@@ -16,5 +17,5 @@ int main() {
     std::sort(vec1.begin(), vec1.end());
     stlb::algorithm::radix_sort(vec2.begin(), vec2.end());
 
-    exit(vec1 != vec2);
+    assert(vec1 == vec2);
 }

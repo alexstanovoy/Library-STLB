@@ -16,5 +16,5 @@ T cnk(const size_t n, const size_t k) {
 
 int main() {
     const std::string ans = "6208056655368386051304263784475616298793715704911304862325449018690017571859172680298706964592212866846502195951000252629008608094041756296703667941558880";
-    exit(cnk<stlb::multiprecision::uint_t<512>>(4984, 3073).to_string() != ans);
+    assert(cnk<stlb::multiprecision::uint_t<512>>(4984, 3073).to_string() == ans);
 }

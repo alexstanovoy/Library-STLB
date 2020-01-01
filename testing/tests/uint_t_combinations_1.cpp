@@ -1,5 +1,6 @@
 #include <vector>
 #include <string>
+#include <cassert>
 #include "uint_t.hpp"
 
 template<typename T>
@@ -16,5 +17,5 @@ T cnk(const size_t n, const size_t k) {
 
 int main() {
     const std::string ans = "94630441838050288636931167897268592700261018000093644112499592955158105342540289857626";
-    exit(cnk<stlb::multiprecision::uint_t<287>>(3965, 1403).to_string() != ans);
+    assert(cnk<stlb::multiprecision::uint_t<287>>(3965, 1403).to_string() == ans);
 }

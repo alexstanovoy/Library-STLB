@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9)
-set(PROJECT_REVISION "0.0.2")
+set(PROJECT_REVISION "0.0.4")
 project(stlb_global_cmake VERSION ${PROJECT_REVISION})
 
 if(CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)

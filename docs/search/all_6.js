@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['fast_5ffourier_5ftransform',['fast_fourier_transform',['../namespacestlb_1_1algorithm.html#a5ddd1940ad117dd6b1e83567cd12d6c5',1,'stlb::algorithm']]],
-  ['fft_5f',['fft_',['../classstlb_1_1algorithm_1_1____fast__fourier__transform.html#a94145d37329612d50793d082de0451d5',1,'stlb::algorithm::__fast_fourier_transform']]],
+  ['fast_5ffourier_5ftransform',['fast_fourier_transform',['../namespacestlb_1_1algorithm.html#a14f59b250b735f2de2c9dcf8a292f03d',1,'stlb::algorithm']]],
+  ['fft_5f',['fft_',['../classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ab0fdc1ca8d59b57ed03f3fac10af945a',1,'stlb::algorithm::__fast_fourier_transform']]],
   ['fib_5fheap',['fib_heap',['../classstlb_1_1data__structure_1_1fib__heap.html',1,'fib_heap&lt; T &gt;'],['../classstlb_1_1data__structure_1_1fib__heap.html#ad70e7e5d842b1447fe98d821f8224576',1,'stlb::data_structure::fib_heap::fib_heap()']]],
   ['fib_5fheap_2ehpp',['fib_heap.hpp',['../fib__heap_8hpp.html',1,'']]],
   ['fill_5fand_5fsort_5fquery_5f',['fill_and_sort_query_',['../classstlb_1_1geometry_1_1____are__inside__polygon.html#a28be92a498cc10c194919d628cbf76a5',1,'stlb::geometry::__are_inside_polygon']]],
-  ['finalize_5f',['finalize_',['../classstlb_1_1utility_1_1earley__parser.html#ad41e665a82a3cdb978d65fb6774df03a',1,'stlb::utility::earley_parser']]],
+  ['finalize_5f',['finalize_',['../classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ab249370498ae6b5782b079122a8d8f48',1,'stlb::algorithm::__fast_fourier_transform::finalize_()'],['../classstlb_1_1algorithm_1_1____suffix__array.html#af76b842d0c433d54897dcf8f558eeff4',1,'stlb::algorithm::__suffix_array::finalize_()'],['../classstlb_1_1utility_1_1earley__parser.html#ad41e665a82a3cdb978d65fb6774df03a',1,'stlb::utility::earley_parser::finalize_()']]],
   ['find',['find',['../classstlb_1_1data__structure_1_1set.html#a200831393c01303032ee93250b13cff6',1,'stlb::data_structure::set::find()'],['../classstlb_1_1data__structure_1_1trie.html#aba67f1382d27984958ec59a768bb5e11',1,'stlb::data_structure::trie::find()']]],
   ['find_5f',['find_',['../classstlb_1_1data__structure_1_1trie.html#a31d18cd0e40991e0b75c0059f1f0da7a',1,'stlb::data_structure::trie']]],
   ['find_5fby_5forder',['find_by_order',['../classstlb_1_1data__structure_1_1set.html#aa0893a412ecd2dda594f32c498c9c90b',1,'stlb::data_structure::set']]],

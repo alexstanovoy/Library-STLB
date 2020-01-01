@@ -15,5 +15,5 @@ T fib(const size_t n) {
 
 int main() {
     const std::string ans = "16838932431231352876383";
-    exit(fib<stlb::multiprecision::uint_t<75>>(13452334).to_string() != ans);
+    assert(fib<stlb::multiprecision::uint_t<75>>(13452334).to_string() == ans);
 }

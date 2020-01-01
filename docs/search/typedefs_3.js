@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type',['type',['../classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ab47f5b0cd1e557fa8170e8e9c67a536e',1,'stlb::algorithm::__fast_fourier_transform']]]
+  ['word_5ft',['word_t',['../classstlb_1_1data__structure_1_1bitset.html#a68959a22e3342006d5e376cf937e3a2e',1,'stlb::data_structure::bitset']]]
 ];

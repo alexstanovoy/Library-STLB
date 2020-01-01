@@ -8,5 +8,5 @@ var searchData=
   ['top',['top',['../classstlb_1_1data__structure_1_1fib__heap.html#a1e7c3fbdccb8556d599b18353836b1e7',1,'stlb::data_structure::fib_heap']]],
   ['trie',['trie',['../classstlb_1_1data__structure_1_1trie.html',1,'trie&lt; _min_key, _max_key, _value &gt;'],['../classstlb_1_1data__structure_1_1trie_1_1iterator.html#acd7560f7f96dec9163997cf6ef6e7404',1,'stlb::data_structure::trie::iterator::trie()'],['../classstlb_1_1data__structure_1_1trie.html#a350894ed546968d345bdc5f01432eea7',1,'stlb::data_structure::trie::trie() noexcept'],['../classstlb_1_1data__structure_1_1trie.html#a2a1ee3e6509ec85b96d659b036cdabc0',1,'stlb::data_structure::trie::trie(trie&lt; _min_key, _max_key, _value &gt; &amp;&amp;other) noexcept']]],
   ['trie_2ehpp',['trie.hpp',['../trie_8hpp.html',1,'']]],
-  ['type',['type',['../classstlb_1_1algorithm_1_1____fast__fourier__transform.html#ab47f5b0cd1e557fa8170e8e9c67a536e',1,'stlb::algorithm::__fast_fourier_transform::type()'],['../structstlb_1_1geometry_1_1____are__inside__polygon_1_1query.html#ad2c7543028d8c1244b5a585223f50599',1,'stlb::geometry::__are_inside_polygon::query::type()']]]
+  ['type',['type',['../structstlb_1_1geometry_1_1____are__inside__polygon_1_1query.html#ad2c7543028d8c1244b5a585223f50599',1,'stlb::geometry::__are_inside_polygon::query']]]
 ];
